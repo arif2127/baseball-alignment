@@ -1,0 +1,735 @@
+2024-09-24 16:50:04,376 [root] [INFO]> --------------------
+2024-09-24 16:50:04,376 [root] [INFO]> Views: ['cam0', 'cam1', 'cam2']
+2024-09-24 16:50:04,376 [root] [INFO]> Use all the landmarks.
+2024-09-24 16:50:04,377 [root] [INFO]> Preparing the input data...(this can take a while depending on the number of points to triangulate)
+2024-09-24 16:50:04,429 [root] [INFO]> The preparation of the input data took: 0.05s
+2024-09-24 16:50:04,429 [root] [INFO]> Sizes:
+2024-09-24 16:50:04,430 [root] [INFO]> 	 camera_params: (3, 15)
+2024-09-24 16:50:04,430 [root] [INFO]> 	 points_3d: (576, 3)
+2024-09-24 16:50:04,431 [root] [INFO]> 	 points_2d: (1728, 2)
+2024-09-24 16:50:04,845 [root] [INFO]> Early Outlier rejection:
+2024-09-24 16:50:04,845 [root] [INFO]> 	 threshold outliers: 1000.0
+2024-09-24 16:50:04,849 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-09-24 16:50:05,266 [root] [INFO]> Bounded optimization:
+2024-09-24 16:50:05,266 [root] [INFO]> 	 LB(x)=x-bound; UB(x)=x+bound
+2024-09-24 16:50:05,267 [root] [INFO]> 	 rvec bounds=(0.3,0.3,0.3)
+2024-09-24 16:50:05,268 [root] [INFO]> 	 tvec bounds=(2,2,2)
+2024-09-24 16:50:05,269 [root] [INFO]> 	 k bounds=(fx=10,fy=10,c0=10,c1=10)
+2024-09-24 16:50:05,270 [root] [INFO]> 	 dist bounds=(0.01,0.01,0,0,0)
+2024-09-24 16:50:05,270 [root] [INFO]> 	 3d points bounds=(x=1000,y=1000,z=1000)
+2024-09-24 16:50:05,271 [root] [INFO]> Least-Squares optimization of 3D points and camera parameters:
+2024-09-24 16:50:05,271 [root] [INFO]> 	 optimize camera parameters: True
+2024-09-24 16:50:05,271 [root] [INFO]> 	 optimize 3d points: True
+2024-09-24 16:50:05,272 [root] [INFO]> 	 ftol=1.000e-08
+2024-09-24 16:50:05,272 [root] [INFO]> 	 xtol=1.000e-08
+2024-09-24 16:50:05,272 [root] [INFO]> 	 loss=linear f_scale=1.00
+2024-09-24 16:50:05,273 [root] [INFO]> 	 max_nfev=200
+2024-09-24 16:50:05,342 [multiview_calib.bundle_adjustment_scipy] [INFO]>    Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality
+2024-09-24 16:50:05,343 [multiview_calib.bundle_adjustment_scipy] [INFO]>        0              1         2.9243e+04                                    3.12e+07
+2024-09-24 16:50:05,523 [multiview_calib.bundle_adjustment_scipy] [INFO]>        1              2         3.6072e+01      2.92e+04       1.49e+00       1.65e+05
+2024-09-24 16:50:05,592 [multiview_calib.bundle_adjustment_scipy] [INFO]>        2              3         6.0923e+00      3.00e+01       5.77e+00       1.87e+05
+2024-09-24 16:50:05,655 [multiview_calib.bundle_adjustment_scipy] [INFO]>        3              4         4.3000e+00      1.79e+00       2.29e+00       8.26e+04
+2024-09-24 16:50:05,723 [multiview_calib.bundle_adjustment_scipy] [INFO]>        4              5         4.1331e+00      1.67e-01       5.37e-01       7.42e+04
+2024-09-24 16:50:05,792 [multiview_calib.bundle_adjustment_scipy] [INFO]>        5              6         4.0006e+00      1.33e-01       4.89e-01       7.26e+04
+2024-09-24 16:50:05,859 [multiview_calib.bundle_adjustment_scipy] [INFO]>        6              7         3.2724e+00      7.28e-01       4.32e+00       2.66e+04
+2024-09-24 16:50:05,915 [multiview_calib.bundle_adjustment_scipy] [INFO]>        7              8         2.8310e+00      4.41e-01       3.77e+00       3.00e+03
+2024-09-24 16:50:05,972 [multiview_calib.bundle_adjustment_scipy] [INFO]>        8              9         2.6960e+00      1.35e-01       1.85e+00       2.00e+03
+2024-09-24 16:50:06,027 [multiview_calib.bundle_adjustment_scipy] [INFO]>        9             10         2.6580e+00      3.80e-02       7.26e-01       1.38e+03
+2024-09-24 16:50:06,080 [multiview_calib.bundle_adjustment_scipy] [INFO]>       10             11         2.6412e+00      1.68e-02       3.95e-01       2.15e+04
+2024-09-24 16:50:06,135 [multiview_calib.bundle_adjustment_scipy] [INFO]>       11             12         2.6280e+00      1.32e-02       3.36e-01       1.23e+04
+2024-09-24 16:50:06,184 [multiview_calib.bundle_adjustment_scipy] [INFO]>       12             13         2.6266e+00      1.47e-03       1.89e-02       9.37e+02
+2024-09-24 16:50:06,233 [multiview_calib.bundle_adjustment_scipy] [INFO]>       13             14         2.6257e+00      8.35e-04       3.48e-02       4.29e+03
+2024-09-24 16:50:06,285 [multiview_calib.bundle_adjustment_scipy] [INFO]>       14             15         2.6249e+00      8.16e-04       1.60e-02       7.57e+02
+2024-09-24 16:50:06,333 [multiview_calib.bundle_adjustment_scipy] [INFO]>       15             16         2.6242e+00      7.52e-04       3.19e-02       4.04e+03
+2024-09-24 16:50:06,382 [multiview_calib.bundle_adjustment_scipy] [INFO]>       16             17         2.6234e+00      7.43e-04       1.56e-02       6.11e+02
+2024-09-24 16:50:06,430 [multiview_calib.bundle_adjustment_scipy] [INFO]>       17             18         2.6227e+00      7.07e-04       3.00e-02       3.64e+03
+2024-09-24 16:50:06,479 [multiview_calib.bundle_adjustment_scipy] [INFO]>       18             19         2.6220e+00      6.95e-04       1.48e-02       4.93e+02
+2024-09-24 16:50:06,527 [multiview_calib.bundle_adjustment_scipy] [INFO]>       19             20         2.6213e+00      6.77e-04       2.90e-02       3.60e+03
+2024-09-24 16:50:06,575 [multiview_calib.bundle_adjustment_scipy] [INFO]>       20             21         2.6207e+00      6.70e-04       1.43e-02       3.97e+02
+2024-09-24 16:50:06,625 [multiview_calib.bundle_adjustment_scipy] [INFO]>       21             22         2.6200e+00      6.24e-04       2.65e-02       3.34e+03
+2024-09-24 16:50:06,673 [multiview_calib.bundle_adjustment_scipy] [INFO]>       22             23         2.6194e+00      6.19e-04       1.38e-02       3.43e+02
+2024-09-24 16:50:06,720 [multiview_calib.bundle_adjustment_scipy] [INFO]>       23             24         2.6189e+00      4.88e-04       1.97e-02       2.87e+03
+2024-09-24 16:50:06,766 [multiview_calib.bundle_adjustment_scipy] [INFO]>       24             25         2.6184e+00      5.15e-04       1.30e-02       3.77e+02
+2024-09-24 16:50:06,814 [multiview_calib.bundle_adjustment_scipy] [INFO]>       25             26         2.6179e+00      4.81e-04       1.83e-02       2.67e+03
+2024-09-24 16:50:06,861 [multiview_calib.bundle_adjustment_scipy] [INFO]>       26             27         2.6175e+00      4.56e-04       1.16e-02       3.46e+02
+2024-09-24 16:50:06,906 [multiview_calib.bundle_adjustment_scipy] [INFO]>       27             28         2.6173e+00      1.87e-04       4.92e-03       1.15e+03
+2024-09-24 16:50:06,953 [multiview_calib.bundle_adjustment_scipy] [INFO]>       28             29         2.6172e+00      1.40e-04       5.11e-03       2.41e+02
+2024-09-24 16:50:07,001 [multiview_calib.bundle_adjustment_scipy] [INFO]>       29             30         2.6170e+00      1.43e-04       4.43e-03       1.08e+03
+2024-09-24 16:50:07,048 [multiview_calib.bundle_adjustment_scipy] [INFO]>       30             31         2.6169e+00      1.40e-04       5.06e-03       2.20e+02
+2024-09-24 16:50:07,097 [multiview_calib.bundle_adjustment_scipy] [INFO]>       31             32         2.6167e+00      1.43e-04       4.55e-03       1.03e+03
+2024-09-24 16:50:07,143 [multiview_calib.bundle_adjustment_scipy] [INFO]>       32             33         2.6166e+00      1.40e-04       4.98e-03       2.01e+02
+2024-09-24 16:50:07,190 [multiview_calib.bundle_adjustment_scipy] [INFO]>       33             34         2.6164e+00      1.46e-04       4.80e-03       1.01e+03
+2024-09-24 16:50:07,238 [multiview_calib.bundle_adjustment_scipy] [INFO]>       34             35         2.6163e+00      1.36e-04       4.67e-03       1.77e+02
+2024-09-24 16:50:07,285 [multiview_calib.bundle_adjustment_scipy] [INFO]>       35             36         2.6162e+00      1.43e-04       4.97e-03       9.97e+02
+2024-09-24 16:50:07,331 [multiview_calib.bundle_adjustment_scipy] [INFO]>       36             37         2.6160e+00      1.38e-04       4.56e-03       1.61e+02
+2024-09-24 16:50:07,377 [multiview_calib.bundle_adjustment_scipy] [INFO]>       37             38         2.6159e+00      1.54e-04       5.68e-03       1.04e+03
+2024-09-24 16:50:07,424 [multiview_calib.bundle_adjustment_scipy] [INFO]>       38             39         2.6157e+00      1.45e-04       4.43e-03       1.43e+02
+2024-09-24 16:50:07,472 [multiview_calib.bundle_adjustment_scipy] [INFO]>       39             40         2.6156e+00      1.53e-04       5.95e-03       1.05e+03
+2024-09-24 16:50:07,519 [multiview_calib.bundle_adjustment_scipy] [INFO]>       40             41         2.6154e+00      1.46e-04       4.25e-03       1.29e+02
+2024-09-24 16:50:07,565 [multiview_calib.bundle_adjustment_scipy] [INFO]>       41             42         2.6153e+00      1.62e-04       6.64e-03       1.09e+03
+2024-09-24 16:50:07,613 [multiview_calib.bundle_adjustment_scipy] [INFO]>       42             43         2.6151e+00      1.53e-04       4.14e-03       1.14e+02
+2024-09-24 16:50:07,660 [multiview_calib.bundle_adjustment_scipy] [INFO]>       43             44         2.6149e+00      1.78e-04       7.75e-03       1.17e+03
+2024-09-24 16:50:07,707 [multiview_calib.bundle_adjustment_scipy] [INFO]>       44             45         2.6148e+00      1.67e-04       4.06e-03       9.92e+01
+2024-09-24 16:50:07,755 [multiview_calib.bundle_adjustment_scipy] [INFO]>       45             46         2.6146e+00      2.07e-04       9.72e-03       1.29e+03
+2024-09-24 16:50:07,802 [multiview_calib.bundle_adjustment_scipy] [INFO]>       46             47         2.6144e+00      1.93e-04       4.02e-03       8.27e+01
+2024-09-24 16:50:07,852 [multiview_calib.bundle_adjustment_scipy] [INFO]>       47             48         2.6141e+00      2.72e-04       1.38e-02       1.51e+03
+2024-09-24 16:50:07,897 [multiview_calib.bundle_adjustment_scipy] [INFO]>       48             49         2.6138e+00      2.52e-04       4.14e-03       6.48e+01
+2024-09-24 16:50:07,942 [multiview_calib.bundle_adjustment_scipy] [INFO]>       49             50         2.6134e+00      4.55e-04       2.52e-02       1.97e+03
+2024-09-24 16:50:07,989 [multiview_calib.bundle_adjustment_scipy] [INFO]>       50             51         2.6130e+00      4.20e-04       4.67e-03       4.49e+01
+2024-09-24 16:50:08,035 [multiview_calib.bundle_adjustment_scipy] [INFO]>       51             52         2.6115e+00      1.47e-03       8.74e-02       3.14e+03
+2024-09-24 16:50:08,087 [multiview_calib.bundle_adjustment_scipy] [INFO]>       52             53         2.6102e+00      1.32e-03       7.02e-03       2.40e+01
+2024-09-24 16:50:08,140 [multiview_calib.bundle_adjustment_scipy] [INFO]>       53             54         2.6029e+00      7.24e-03       2.97e-01       9.19e+02
+2024-09-24 16:50:08,190 [multiview_calib.bundle_adjustment_scipy] [INFO]>       54             55         2.6020e+00      9.75e-04       1.14e-02       1.07e+02
+2024-09-24 16:50:08,241 [multiview_calib.bundle_adjustment_scipy] [INFO]>       55             56         2.6014e+00      6.04e-04       3.86e-02       7.34e+02
+2024-09-24 16:50:08,295 [multiview_calib.bundle_adjustment_scipy] [INFO]>       56             57         2.6008e+00      5.54e-04       7.99e-03       1.23e+02
+2024-09-24 16:50:08,347 [multiview_calib.bundle_adjustment_scipy] [INFO]>       57             58         2.6007e+00      6.91e-05       2.86e-03       1.62e+02
+2024-09-24 16:50:08,397 [multiview_calib.bundle_adjustment_scipy] [INFO]>       58             59         2.6007e+00      6.40e-05       2.43e-03       1.18e+02
+2024-09-24 16:50:08,447 [multiview_calib.bundle_adjustment_scipy] [INFO]>       59             60         2.6006e+00      8.34e-05       3.90e-03       2.06e+02
+2024-09-24 16:50:08,496 [multiview_calib.bundle_adjustment_scipy] [INFO]>       60             61         2.6005e+00      7.09e-05       2.14e-03       9.62e+01
+2024-09-24 16:50:08,540 [multiview_calib.bundle_adjustment_scipy] [INFO]>       61             62         2.6004e+00      1.04e-04       5.62e-03       2.74e+02
+2024-09-24 16:50:08,584 [multiview_calib.bundle_adjustment_scipy] [INFO]>       62             63         2.6003e+00      9.07e-05       1.97e-03       7.55e+01
+2024-09-24 16:50:08,629 [multiview_calib.bundle_adjustment_scipy] [INFO]>       63             64         2.6003e+00      7.94e-05       4.45e-03       2.44e+02
+2024-09-24 16:50:08,674 [multiview_calib.bundle_adjustment_scipy] [INFO]>       64             65         2.6002e+00      8.15e-05       1.90e-03       8.30e+01
+2024-09-24 16:50:08,718 [multiview_calib.bundle_adjustment_scipy] [INFO]>       65             66         2.6001e+00      6.99e-05       3.76e-03       2.15e+02
+2024-09-24 16:50:08,762 [multiview_calib.bundle_adjustment_scipy] [INFO]>       66             67         2.6000e+00      6.90e-05       1.63e-03       8.22e+01
+2024-09-24 16:50:08,805 [multiview_calib.bundle_adjustment_scipy] [INFO]>       67             68         2.6000e+00      6.91e-05       3.77e-03       2.10e+02
+2024-09-24 16:50:08,849 [multiview_calib.bundle_adjustment_scipy] [INFO]>       68             69         2.5999e+00      6.83e-05       1.57e-03       8.12e+01
+2024-09-24 16:50:08,893 [multiview_calib.bundle_adjustment_scipy] [INFO]>       69             70         2.5998e+00      6.94e-05       3.85e-03       2.06e+02
+2024-09-24 16:50:08,936 [multiview_calib.bundle_adjustment_scipy] [INFO]>       70             71         2.5998e+00      6.87e-05       1.53e-03       8.02e+01
+2024-09-24 16:50:08,980 [multiview_calib.bundle_adjustment_scipy] [INFO]>       71             72         2.5997e+00      7.00e-05       3.94e-03       2.02e+02
+2024-09-24 16:50:09,022 [multiview_calib.bundle_adjustment_scipy] [INFO]>       72             73         2.5996e+00      6.93e-05       1.51e-03       7.93e+01
+2024-09-24 16:50:09,067 [multiview_calib.bundle_adjustment_scipy] [INFO]>       73             74         2.5995e+00      7.08e-05       4.03e-03       1.97e+02
+2024-09-24 16:50:09,109 [multiview_calib.bundle_adjustment_scipy] [INFO]>       74             75         2.5995e+00      7.01e-05       1.49e-03       7.94e+01
+2024-09-24 16:50:09,153 [multiview_calib.bundle_adjustment_scipy] [INFO]>       75             76         2.5994e+00      7.16e-05       4.13e-03       1.91e+02
+2024-09-24 16:50:09,198 [multiview_calib.bundle_adjustment_scipy] [INFO]>       76             77         2.5993e+00      7.09e-05       1.48e-03       7.97e+01
+2024-09-24 16:50:09,242 [multiview_calib.bundle_adjustment_scipy] [INFO]>       77             78         2.5993e+00      7.24e-05       4.22e-03       1.85e+02
+2024-09-24 16:50:09,286 [multiview_calib.bundle_adjustment_scipy] [INFO]>       78             79         2.5992e+00      7.18e-05       1.47e-03       8.00e+01
+2024-09-24 16:50:09,334 [multiview_calib.bundle_adjustment_scipy] [INFO]>       79             80         2.5991e+00      7.33e-05       4.31e-03       1.81e+02
+2024-09-24 16:50:09,380 [multiview_calib.bundle_adjustment_scipy] [INFO]>       80             81         2.5990e+00      7.26e-05       1.46e-03       8.03e+01
+2024-09-24 16:50:09,424 [multiview_calib.bundle_adjustment_scipy] [INFO]>       81             82         2.5990e+00      7.41e-05       4.41e-03       1.75e+02
+2024-09-24 16:50:09,468 [multiview_calib.bundle_adjustment_scipy] [INFO]>       82             83         2.5989e+00      7.35e-05       1.45e-03       8.07e+01
+2024-09-24 16:50:09,512 [multiview_calib.bundle_adjustment_scipy] [INFO]>       83             84         2.5988e+00      7.47e-05       4.48e-03       1.69e+02
+2024-09-24 16:50:09,555 [multiview_calib.bundle_adjustment_scipy] [INFO]>       84             85         2.5987e+00      7.41e-05       1.44e-03       8.12e+01
+2024-09-24 16:50:09,598 [multiview_calib.bundle_adjustment_scipy] [INFO]>       85             86         2.5987e+00      7.53e-05       4.56e-03       1.63e+02
+2024-09-24 16:50:09,642 [multiview_calib.bundle_adjustment_scipy] [INFO]>       86             87         2.5986e+00      7.48e-05       1.43e-03       8.17e+01
+2024-09-24 16:50:09,687 [multiview_calib.bundle_adjustment_scipy] [INFO]>       87             88         2.5985e+00      7.60e-05       4.64e-03       1.56e+02
+2024-09-24 16:50:09,731 [multiview_calib.bundle_adjustment_scipy] [INFO]>       88             89         2.5984e+00      7.55e-05       1.43e-03       8.22e+01
+2024-09-24 16:50:09,776 [multiview_calib.bundle_adjustment_scipy] [INFO]>       89             90         2.5984e+00      7.67e-05       4.71e-03       1.50e+02
+2024-09-24 16:50:09,821 [multiview_calib.bundle_adjustment_scipy] [INFO]>       90             91         2.5983e+00      7.61e-05       1.42e-03       8.27e+01
+2024-09-24 16:50:09,866 [multiview_calib.bundle_adjustment_scipy] [INFO]>       91             92         2.5982e+00      7.73e-05       4.79e-03       1.44e+02
+2024-09-24 16:50:09,911 [multiview_calib.bundle_adjustment_scipy] [INFO]>       92             93         2.5981e+00      7.68e-05       1.41e-03       8.30e+01
+2024-09-24 16:50:09,955 [multiview_calib.bundle_adjustment_scipy] [INFO]>       93             94         2.5981e+00      7.80e-05       4.86e-03       1.37e+02
+2024-09-24 16:50:09,998 [multiview_calib.bundle_adjustment_scipy] [INFO]>       94             95         2.5980e+00      7.75e-05       1.41e-03       8.33e+01
+2024-09-24 16:50:10,041 [multiview_calib.bundle_adjustment_scipy] [INFO]>       95             96         2.5979e+00      7.86e-05       4.94e-03       1.31e+02
+2024-09-24 16:50:10,084 [multiview_calib.bundle_adjustment_scipy] [INFO]>       96             97         2.5978e+00      7.81e-05       1.40e-03       8.34e+01
+2024-09-24 16:50:10,127 [multiview_calib.bundle_adjustment_scipy] [INFO]>       97             98         2.5977e+00      7.92e-05       5.01e-03       1.26e+02
+2024-09-24 16:50:10,170 [multiview_calib.bundle_adjustment_scipy] [INFO]>       98             99         2.5977e+00      7.87e-05       1.40e-03       8.34e+01
+2024-09-24 16:50:10,214 [multiview_calib.bundle_adjustment_scipy] [INFO]>       99             100        2.5976e+00      7.99e-05       5.08e-03       1.20e+02
+2024-09-24 16:50:10,259 [multiview_calib.bundle_adjustment_scipy] [INFO]>       100            101        2.5975e+00      7.94e-05       1.39e-03       8.32e+01
+2024-09-24 16:50:10,304 [multiview_calib.bundle_adjustment_scipy] [INFO]>       101            102        2.5974e+00      8.05e-05       5.16e-03       1.15e+02
+2024-09-24 16:50:10,348 [multiview_calib.bundle_adjustment_scipy] [INFO]>       102            103        2.5973e+00      8.00e-05       1.39e-03       8.29e+01
+2024-09-24 16:50:10,392 [multiview_calib.bundle_adjustment_scipy] [INFO]>       103            104        2.5973e+00      8.11e-05       5.23e-03       1.10e+02
+2024-09-24 16:50:10,435 [multiview_calib.bundle_adjustment_scipy] [INFO]>       104            105        2.5972e+00      8.06e-05       1.39e-03       8.24e+01
+2024-09-24 16:50:10,479 [multiview_calib.bundle_adjustment_scipy] [INFO]>       105            106        2.5971e+00      8.17e-05       5.30e-03       1.05e+02
+2024-09-24 16:50:10,523 [multiview_calib.bundle_adjustment_scipy] [INFO]>       106            107        2.5970e+00      8.13e-05       1.38e-03       8.17e+01
+2024-09-24 16:50:10,566 [multiview_calib.bundle_adjustment_scipy] [INFO]>       107            108        2.5969e+00      8.23e-05       5.36e-03       1.01e+02
+2024-09-24 16:50:10,610 [multiview_calib.bundle_adjustment_scipy] [INFO]>       108            109        2.5969e+00      8.18e-05       1.38e-03       8.08e+01
+2024-09-24 16:50:10,653 [multiview_calib.bundle_adjustment_scipy] [INFO]>       109            110        2.5968e+00      8.29e-05       5.43e-03       9.64e+01
+2024-09-24 16:50:10,698 [multiview_calib.bundle_adjustment_scipy] [INFO]>       110            111        2.5967e+00      8.24e-05       1.38e-03       7.96e+01
+2024-09-24 16:50:10,741 [multiview_calib.bundle_adjustment_scipy] [INFO]>       111            112        2.5966e+00      8.36e-05       5.51e-03       9.26e+01
+2024-09-24 16:50:10,786 [multiview_calib.bundle_adjustment_scipy] [INFO]>       112            113        2.5965e+00      8.31e-05       1.37e-03       7.83e+01
+2024-09-24 16:50:10,830 [multiview_calib.bundle_adjustment_scipy] [INFO]>       113            114        2.5964e+00      8.43e-05       5.58e-03       8.91e+01
+2024-09-24 16:50:10,873 [multiview_calib.bundle_adjustment_scipy] [INFO]>       114            115        2.5964e+00      8.38e-05       1.37e-03       7.67e+01
+2024-09-24 16:50:10,918 [multiview_calib.bundle_adjustment_scipy] [INFO]>       115            116        2.5963e+00      8.50e-05       5.65e-03       8.58e+01
+2024-09-24 16:50:10,970 [multiview_calib.bundle_adjustment_scipy] [INFO]>       116            117        2.5962e+00      8.45e-05       1.37e-03       7.50e+01
+2024-09-24 16:50:11,014 [multiview_calib.bundle_adjustment_scipy] [INFO]>       117            118        2.5961e+00      8.56e-05       5.73e-03       8.28e+01
+2024-09-24 16:50:11,058 [multiview_calib.bundle_adjustment_scipy] [INFO]>       118            119        2.5960e+00      8.51e-05       1.37e-03       7.33e+01
+2024-09-24 16:50:11,101 [multiview_calib.bundle_adjustment_scipy] [INFO]>       119            120        2.5959e+00      8.63e-05       5.80e-03       7.99e+01
+2024-09-24 16:50:11,146 [multiview_calib.bundle_adjustment_scipy] [INFO]>       120            121        2.5958e+00      8.58e-05       1.36e-03       7.14e+01
+2024-09-24 16:50:11,189 [multiview_calib.bundle_adjustment_scipy] [INFO]>       121            122        2.5958e+00      8.69e-05       5.87e-03       7.74e+01
+2024-09-24 16:50:11,233 [multiview_calib.bundle_adjustment_scipy] [INFO]>       122            123        2.5957e+00      8.70e-05       1.41e-03       7.18e+01
+2024-09-24 16:50:11,278 [multiview_calib.bundle_adjustment_scipy] [INFO]>       123            124        2.5956e+00      8.52e-05       5.75e-03       7.34e+01
+2024-09-24 16:50:11,323 [multiview_calib.bundle_adjustment_scipy] [INFO]>       124            125        2.5955e+00      8.53e-05       1.41e-03       7.18e+01
+2024-09-24 16:50:11,368 [multiview_calib.bundle_adjustment_scipy] [INFO]>       125            126        2.5954e+00      8.35e-05       5.63e-03       6.97e+01
+2024-09-24 16:50:11,411 [multiview_calib.bundle_adjustment_scipy] [INFO]>       126            127        2.5953e+00      8.37e-05       1.41e-03       7.19e+01
+2024-09-24 16:50:11,454 [multiview_calib.bundle_adjustment_scipy] [INFO]>       127            128        2.5953e+00      8.17e-05       5.50e-03       6.63e+01
+2024-09-24 16:50:11,498 [multiview_calib.bundle_adjustment_scipy] [INFO]>       128            129        2.5952e+00      8.20e-05       1.42e-03       7.16e+01
+2024-09-24 16:50:11,546 [multiview_calib.bundle_adjustment_scipy] [INFO]>       129            130        2.5951e+00      8.01e-05       5.37e-03       6.32e+01
+2024-09-24 16:50:11,597 [multiview_calib.bundle_adjustment_scipy] [INFO]>       130            131        2.5950e+00      8.03e-05       1.42e-03       7.09e+01
+2024-09-24 16:50:11,645 [multiview_calib.bundle_adjustment_scipy] [INFO]>       131            132        2.5949e+00      7.85e-05       5.25e-03       6.05e+01
+2024-09-24 16:50:11,691 [multiview_calib.bundle_adjustment_scipy] [INFO]>       132            133        2.5949e+00      7.87e-05       1.42e-03       7.00e+01
+2024-09-24 16:50:11,740 [multiview_calib.bundle_adjustment_scipy] [INFO]>       133            134        2.5948e+00      7.69e-05       5.13e-03       5.81e+01
+2024-09-24 16:50:11,789 [multiview_calib.bundle_adjustment_scipy] [INFO]>       134            135        2.5947e+00      7.72e-05       1.42e-03       6.87e+01
+2024-09-24 16:50:11,838 [multiview_calib.bundle_adjustment_scipy] [INFO]>       135            136        2.5946e+00      7.55e-05       5.02e-03       5.60e+01
+2024-09-24 16:50:11,887 [multiview_calib.bundle_adjustment_scipy] [INFO]>       136            137        2.5945e+00      7.58e-05       1.43e-03       6.71e+01
+2024-09-24 16:50:11,934 [multiview_calib.bundle_adjustment_scipy] [INFO]>       137            138        2.5945e+00      7.41e-05       4.91e-03       5.43e+01
+2024-09-24 16:50:11,982 [multiview_calib.bundle_adjustment_scipy] [INFO]>       138            139        2.5944e+00      7.44e-05       1.43e-03       6.54e+01
+2024-09-24 16:50:12,027 [multiview_calib.bundle_adjustment_scipy] [INFO]>       139            140        2.5943e+00      7.28e-05       4.81e-03       5.27e+01
+2024-09-24 16:50:12,070 [multiview_calib.bundle_adjustment_scipy] [INFO]>       140            141        2.5943e+00      7.30e-05       1.43e-03       6.35e+01
+2024-09-24 16:50:12,114 [multiview_calib.bundle_adjustment_scipy] [INFO]>       141            142        2.5942e+00      7.15e-05       4.71e-03       5.14e+01
+2024-09-24 16:50:12,157 [multiview_calib.bundle_adjustment_scipy] [INFO]>       142            143        2.5941e+00      7.18e-05       1.44e-03       6.15e+01
+2024-09-24 16:50:12,200 [multiview_calib.bundle_adjustment_scipy] [INFO]>       143            144        2.5940e+00      7.03e-05       4.61e-03       5.03e+01
+2024-09-24 16:50:12,243 [multiview_calib.bundle_adjustment_scipy] [INFO]>       144            145        2.5940e+00      7.06e-05       1.44e-03       5.95e+01
+2024-09-24 16:50:12,288 [multiview_calib.bundle_adjustment_scipy] [INFO]>       145            146        2.5939e+00      6.91e-05       4.52e-03       4.93e+01
+2024-09-24 16:50:12,332 [multiview_calib.bundle_adjustment_scipy] [INFO]>       146            147        2.5938e+00      6.94e-05       1.45e-03       5.74e+01
+2024-09-24 16:50:12,377 [multiview_calib.bundle_adjustment_scipy] [INFO]>       147            148        2.5938e+00      6.80e-05       4.43e-03       4.85e+01
+2024-09-24 16:50:12,421 [multiview_calib.bundle_adjustment_scipy] [INFO]>       148            149        2.5937e+00      6.83e-05       1.45e-03       5.54e+01
+2024-09-24 16:50:12,464 [multiview_calib.bundle_adjustment_scipy] [INFO]>       149            150        2.5936e+00      6.70e-05       4.35e-03       4.78e+01
+2024-09-24 16:50:12,508 [multiview_calib.bundle_adjustment_scipy] [INFO]>       150            151        2.5936e+00      6.73e-05       1.45e-03       5.35e+01
+2024-09-24 16:50:12,551 [multiview_calib.bundle_adjustment_scipy] [INFO]>       151            152        2.5935e+00      6.60e-05       4.27e-03       4.72e+01
+2024-09-24 16:50:12,594 [multiview_calib.bundle_adjustment_scipy] [INFO]>       152            153        2.5934e+00      6.63e-05       1.46e-03       5.18e+01
+2024-09-24 16:50:12,638 [multiview_calib.bundle_adjustment_scipy] [INFO]>       153            154        2.5934e+00      6.50e-05       4.19e-03       4.65e+01
+2024-09-24 16:50:12,682 [multiview_calib.bundle_adjustment_scipy] [INFO]>       154            155        2.5933e+00      6.53e-05       1.46e-03       5.01e+01
+2024-09-24 16:50:12,726 [multiview_calib.bundle_adjustment_scipy] [INFO]>       155            156        2.5932e+00      6.41e-05       4.12e-03       4.59e+01
+2024-09-24 16:50:12,770 [multiview_calib.bundle_adjustment_scipy] [INFO]>       156            157        2.5932e+00      6.44e-05       1.47e-03       4.87e+01
+2024-09-24 16:50:12,813 [multiview_calib.bundle_adjustment_scipy] [INFO]>       157            158        2.5931e+00      6.33e-05       4.05e-03       4.53e+01
+2024-09-24 16:50:12,856 [multiview_calib.bundle_adjustment_scipy] [INFO]>       158            159        2.5930e+00      6.36e-05       1.47e-03       4.73e+01
+2024-09-24 16:50:12,900 [multiview_calib.bundle_adjustment_scipy] [INFO]>       159            160        2.5930e+00      6.24e-05       3.98e-03       4.46e+01
+2024-09-24 16:50:12,944 [multiview_calib.bundle_adjustment_scipy] [INFO]>       160            161        2.5929e+00      6.27e-05       1.48e-03       4.61e+01
+2024-09-24 16:50:12,988 [multiview_calib.bundle_adjustment_scipy] [INFO]>       161            162        2.5929e+00      6.16e-05       3.91e-03       4.39e+01
+2024-09-24 16:50:13,032 [multiview_calib.bundle_adjustment_scipy] [INFO]>       162            163        2.5928e+00      6.19e-05       1.48e-03       4.50e+01
+2024-09-24 16:50:13,075 [multiview_calib.bundle_adjustment_scipy] [INFO]>       163            164        2.5927e+00      6.09e-05       3.85e-03       4.32e+01
+2024-09-24 16:50:13,121 [multiview_calib.bundle_adjustment_scipy] [INFO]>       164            165        2.5927e+00      6.12e-05       1.49e-03       4.40e+01
+2024-09-24 16:50:13,166 [multiview_calib.bundle_adjustment_scipy] [INFO]>       165            166        2.5926e+00      6.02e-05       3.79e-03       4.24e+01
+2024-09-24 16:50:13,210 [multiview_calib.bundle_adjustment_scipy] [INFO]>       166            167        2.5926e+00      6.05e-05       1.50e-03       4.31e+01
+2024-09-24 16:50:13,254 [multiview_calib.bundle_adjustment_scipy] [INFO]>       167            168        2.5925e+00      5.95e-05       3.73e-03       4.17e+01
+2024-09-24 16:50:13,297 [multiview_calib.bundle_adjustment_scipy] [INFO]>       168            169        2.5924e+00      5.98e-05       1.50e-03       4.23e+01
+2024-09-24 16:50:13,341 [multiview_calib.bundle_adjustment_scipy] [INFO]>       169            170        2.5924e+00      5.88e-05       3.68e-03       4.09e+01
+2024-09-24 16:50:13,386 [multiview_calib.bundle_adjustment_scipy] [INFO]>       170            171        2.5923e+00      5.91e-05       1.51e-03       4.15e+01
+2024-09-24 16:50:13,430 [multiview_calib.bundle_adjustment_scipy] [INFO]>       171            172        2.5923e+00      5.82e-05       3.62e-03       4.01e+01
+2024-09-24 16:50:13,475 [multiview_calib.bundle_adjustment_scipy] [INFO]>       172            173        2.5922e+00      5.85e-05       1.51e-03       4.08e+01
+2024-09-24 16:50:13,519 [multiview_calib.bundle_adjustment_scipy] [INFO]>       173            174        2.5921e+00      5.76e-05       3.57e-03       3.93e+01
+2024-09-24 16:50:13,562 [multiview_calib.bundle_adjustment_scipy] [INFO]>       174            175        2.5921e+00      5.79e-05       1.52e-03       4.01e+01
+2024-09-24 16:50:13,605 [multiview_calib.bundle_adjustment_scipy] [INFO]>       175            176        2.5920e+00      5.71e-05       3.52e-03       3.86e+01
+2024-09-24 16:50:13,650 [multiview_calib.bundle_adjustment_scipy] [INFO]>       176            177        2.5920e+00      5.73e-05       1.52e-03       3.95e+01
+2024-09-24 16:50:13,692 [multiview_calib.bundle_adjustment_scipy] [INFO]>       177            178        2.5919e+00      5.65e-05       3.48e-03       3.79e+01
+2024-09-24 16:50:13,735 [multiview_calib.bundle_adjustment_scipy] [INFO]>       178            179        2.5919e+00      5.68e-05       1.53e-03       3.88e+01
+2024-09-24 16:50:13,779 [multiview_calib.bundle_adjustment_scipy] [INFO]>       179            180        2.5918e+00      5.60e-05       3.43e-03       3.72e+01
+2024-09-24 16:50:13,823 [multiview_calib.bundle_adjustment_scipy] [INFO]>       180            181        2.5917e+00      5.63e-05       1.54e-03       3.81e+01
+2024-09-24 16:50:13,866 [multiview_calib.bundle_adjustment_scipy] [INFO]>       181            182        2.5917e+00      5.55e-05       3.39e-03       3.66e+01
+2024-09-24 16:50:13,910 [multiview_calib.bundle_adjustment_scipy] [INFO]>       182            183        2.5916e+00      5.58e-05       1.54e-03       3.75e+01
+2024-09-24 16:50:13,953 [multiview_calib.bundle_adjustment_scipy] [INFO]>       183            184        2.5916e+00      5.51e-05       3.35e-03       3.60e+01
+2024-09-24 16:50:13,998 [multiview_calib.bundle_adjustment_scipy] [INFO]>       184            185        2.5915e+00      5.53e-05       1.55e-03       3.69e+01
+2024-09-24 16:50:14,050 [multiview_calib.bundle_adjustment_scipy] [INFO]>       185            186        2.5915e+00      5.47e-05       3.32e-03       3.55e+01
+2024-09-24 16:50:14,093 [multiview_calib.bundle_adjustment_scipy] [INFO]>       186            187        2.5914e+00      5.49e-05       1.55e-03       3.63e+01
+2024-09-24 16:50:14,137 [multiview_calib.bundle_adjustment_scipy] [INFO]>       187            188        2.5914e+00      5.43e-05       3.28e-03       3.50e+01
+2024-09-24 16:50:14,180 [multiview_calib.bundle_adjustment_scipy] [INFO]>       188            189        2.5913e+00      5.45e-05       1.56e-03       3.57e+01
+2024-09-24 16:50:14,223 [multiview_calib.bundle_adjustment_scipy] [INFO]>       189            190        2.5912e+00      5.39e-05       3.25e-03       3.46e+01
+2024-09-24 16:50:14,267 [multiview_calib.bundle_adjustment_scipy] [INFO]>       190            191        2.5912e+00      5.42e-05       1.57e-03       3.52e+01
+2024-09-24 16:50:14,311 [multiview_calib.bundle_adjustment_scipy] [INFO]>       191            192        2.5911e+00      5.37e-05       3.22e-03       3.42e+01
+2024-09-24 16:50:14,354 [multiview_calib.bundle_adjustment_scipy] [INFO]>       192            193        2.5911e+00      5.39e-05       1.57e-03       3.46e+01
+2024-09-24 16:50:14,397 [multiview_calib.bundle_adjustment_scipy] [INFO]>       193            194        2.5910e+00      5.35e-05       3.21e-03       3.40e+01
+2024-09-24 16:50:14,440 [multiview_calib.bundle_adjustment_scipy] [INFO]>       194            195        2.5910e+00      5.36e-05       1.58e-03       3.41e+01
+2024-09-24 16:50:14,483 [multiview_calib.bundle_adjustment_scipy] [INFO]>       195            196        2.5909e+00      5.36e-05       3.21e-03       3.41e+01
+2024-09-24 16:50:14,529 [multiview_calib.bundle_adjustment_scipy] [INFO]>       196            197        2.5909e+00      5.37e-05       1.59e-03       3.36e+01
+2024-09-24 16:50:14,572 [multiview_calib.bundle_adjustment_scipy] [INFO]>       197            198        2.5908e+00      5.47e-05       3.28e-03       3.55e+01
+2024-09-24 16:50:14,615 [multiview_calib.bundle_adjustment_scipy] [INFO]>       198            199        2.5908e+00      5.58e-05       1.66e-03       3.56e+01
+2024-09-24 16:50:14,658 [multiview_calib.bundle_adjustment_scipy] [INFO]>       199            200        2.5907e+00      6.74e-05       4.13e-03       4.88e+01
+2024-09-24 16:50:14,659 [multiview_calib.bundle_adjustment_scipy] [INFO]> The maximum number of function evaluations is exceeded.
+2024-09-24 16:50:14,659 [multiview_calib.bundle_adjustment_scipy] [INFO]> Function evaluations 200, initial cost 2.9243e+04, final cost 2.5907e+00, first-order optimality 4.88e+01.
+2024-09-24 16:50:14,659 [root] [INFO]> Optimization took 9 seconds
+2024-09-24 16:50:14,661 [root] [INFO]> Average absolute residual: 0.03 over 1728.0 points.
+2024-09-24 16:50:14,897 [root] [INFO]> Outlier rejection:
+2024-09-24 16:50:14,898 [root] [INFO]> 	 threshold outliers: 50
+2024-09-24 16:50:14,898 [root] [INFO]> 	 max_nfev=200
+2024-09-24 16:50:14,901 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-09-24 16:50:14,901 [root] [INFO]> 	 Exit.
+2024-09-24 16:50:14,902 [root] [INFO]> Reprojection errors (mean+-std pixels):
+2024-09-24 16:50:14,903 [root] [INFO]> 	 cam0 n_points=576: 0.053+-0.031
+2024-09-24 16:50:14,903 [root] [INFO]> 	 cam1 n_points=576: 0.044+-0.026
+2024-09-24 16:50:14,904 [root] [INFO]> 	 cam2 n_points=576: 0.044+-0.025
+2024-09-24 16:50:14,904 [root] [INFO]> Reprojection errors (median pixels):
+2024-09-24 16:50:14,905 [root] [INFO]> 	 cam0 n_points=576: 0.048
+2024-09-24 16:50:14,906 [root] [INFO]> 	 cam1 n_points=576: 0.039
+2024-09-24 16:50:14,907 [root] [INFO]> 	 cam2 n_points=576: 0.041
+2024-09-24 16:50:14,907 [root] [INFO]> Visualise all the annotations.
+2024-10-14 18:45:59,729 [root] [INFO]> --------------------
+2024-10-14 18:45:59,729 [root] [INFO]> Views: ['cam0', 'cam1', 'cam2']
+2024-10-14 18:45:59,729 [root] [INFO]> Use all the landmarks.
+2024-10-14 18:45:59,729 [root] [INFO]> Preparing the input data...(this can take a while depending on the number of points to triangulate)
+2024-10-14 18:45:59,777 [root] [INFO]> The preparation of the input data took: 0.05s
+2024-10-14 18:45:59,777 [root] [INFO]> Sizes:
+2024-10-14 18:45:59,777 [root] [INFO]> 	 camera_params: (3, 15)
+2024-10-14 18:45:59,777 [root] [INFO]> 	 points_3d: (720, 3)
+2024-10-14 18:45:59,778 [root] [INFO]> 	 points_2d: (2160, 2)
+2024-10-14 18:46:00,048 [root] [INFO]> Early Outlier rejection:
+2024-10-14 18:46:00,049 [root] [INFO]> 	 threshold outliers: 1000.0
+2024-10-14 18:46:00,050 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-10-14 18:46:00,320 [root] [INFO]> Bounded optimization:
+2024-10-14 18:46:00,321 [root] [INFO]> 	 LB(x)=x-bound; UB(x)=x+bound
+2024-10-14 18:46:00,321 [root] [INFO]> 	 rvec bounds=(0.3,0.3,0.3)
+2024-10-14 18:46:00,321 [root] [INFO]> 	 tvec bounds=(2,2,2)
+2024-10-14 18:46:00,321 [root] [INFO]> 	 k bounds=(fx=10,fy=10,c0=10,c1=10)
+2024-10-14 18:46:00,322 [root] [INFO]> 	 dist bounds=(0.01,0.01,0,0,0)
+2024-10-14 18:46:00,322 [root] [INFO]> 	 3d points bounds=(x=1000,y=1000,z=1000)
+2024-10-14 18:46:00,322 [root] [INFO]> Least-Squares optimization of 3D points and camera parameters:
+2024-10-14 18:46:00,322 [root] [INFO]> 	 optimize camera parameters: True
+2024-10-14 18:46:00,322 [root] [INFO]> 	 optimize 3d points: True
+2024-10-14 18:46:00,323 [root] [INFO]> 	 ftol=1.000e-08
+2024-10-14 18:46:00,323 [root] [INFO]> 	 xtol=1.000e-08
+2024-10-14 18:46:00,323 [root] [INFO]> 	 loss=linear f_scale=1.00
+2024-10-14 18:46:00,323 [root] [INFO]> 	 max_nfev=200
+2024-10-14 18:46:00,378 [multiview_calib.bundle_adjustment_scipy] [INFO]>    Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality
+2024-10-14 18:46:00,378 [multiview_calib.bundle_adjustment_scipy] [INFO]>        0              1         9.8580e+05                                    2.51e+08
+2024-10-14 18:46:00,435 [multiview_calib.bundle_adjustment_scipy] [INFO]>        1              2         6.9296e+03      9.79e+05       3.04e+00       5.70e+06
+2024-10-14 18:46:00,490 [multiview_calib.bundle_adjustment_scipy] [INFO]>        2              3         3.3908e+02      6.59e+03       1.95e+00       2.74e+06
+2024-10-14 18:46:00,541 [multiview_calib.bundle_adjustment_scipy] [INFO]>        3              4         2.6793e+02      7.12e+01       3.47e+00       4.48e+04
+2024-10-14 18:46:00,596 [multiview_calib.bundle_adjustment_scipy] [INFO]>        4              5         2.5676e+02      1.12e+01       9.93e+00       1.66e+05
+2024-10-14 18:46:00,642 [multiview_calib.bundle_adjustment_scipy] [INFO]>        5              6         2.5374e+02      3.02e+00       3.17e+00       5.17e+04
+2024-10-14 18:46:00,690 [multiview_calib.bundle_adjustment_scipy] [INFO]>        6              7         2.5261e+02      1.13e+00       1.48e+00       3.21e+04
+2024-10-14 18:46:00,737 [multiview_calib.bundle_adjustment_scipy] [INFO]>        7              8         2.5194e+02      6.67e-01       9.84e-01       2.28e+04
+2024-10-14 18:46:00,782 [multiview_calib.bundle_adjustment_scipy] [INFO]>        8              9         2.5154e+02      4.00e-01       6.44e-01       1.92e+04
+2024-10-14 18:46:00,828 [multiview_calib.bundle_adjustment_scipy] [INFO]>        9             10         2.5134e+02      1.96e-01       5.09e-01       9.89e+03
+2024-10-14 18:46:00,869 [multiview_calib.bundle_adjustment_scipy] [INFO]>       10             11         2.5121e+02      1.35e-01       6.75e-02       3.96e+03
+2024-10-14 18:46:00,912 [multiview_calib.bundle_adjustment_scipy] [INFO]>       11             12         2.5108e+02      1.30e-01       3.80e-01       3.62e+03
+2024-10-14 18:46:00,955 [multiview_calib.bundle_adjustment_scipy] [INFO]>       12             13         2.5098e+02      9.79e-02       5.82e-02       3.53e+03
+2024-10-14 18:46:00,997 [multiview_calib.bundle_adjustment_scipy] [INFO]>       13             14         2.5087e+02      1.12e-01       3.51e-01       1.09e+04
+2024-10-14 18:46:01,042 [multiview_calib.bundle_adjustment_scipy] [INFO]>       14             15         2.5078e+02      8.87e-02       5.47e-02       4.97e+03
+2024-10-14 18:46:01,085 [multiview_calib.bundle_adjustment_scipy] [INFO]>       15             16         2.5077e+02      5.25e-03       1.32e-02       4.70e+03
+2024-10-14 18:46:01,125 [multiview_calib.bundle_adjustment_scipy] [INFO]>       16             17         2.5077e+02      3.65e-03       3.98e-03       2.65e+03
+2024-10-14 18:46:01,168 [multiview_calib.bundle_adjustment_scipy] [INFO]>       17             18         2.5077e+02      4.29e-03       1.38e-02       4.30e+03
+2024-10-14 18:46:01,230 [multiview_calib.bundle_adjustment_scipy] [INFO]>       18             19         2.5076e+02      4.17e-03       4.31e-03       3.21e+03
+2024-10-14 18:46:01,278 [multiview_calib.bundle_adjustment_scipy] [INFO]>       19             20         2.5076e+02      1.78e-03       5.09e-03       2.77e+03
+2024-10-14 18:46:01,309 [multiview_calib.bundle_adjustment_scipy] [INFO]>       20             21         2.5076e+02      2.07e-03       3.45e-03       4.43e+03
+2024-10-14 18:46:01,356 [multiview_calib.bundle_adjustment_scipy] [INFO]>       21             22         2.5076e+02      1.10e-03       2.25e-03       1.29e+03
+2024-10-14 18:46:01,387 [multiview_calib.bundle_adjustment_scipy] [INFO]>       22             23         2.5076e+02      1.05e-03       2.36e-03       3.69e+03
+2024-10-14 18:46:01,434 [multiview_calib.bundle_adjustment_scipy] [INFO]>       23             24         2.5076e+02      1.07e-03       2.26e-03       1.03e+03
+2024-10-14 18:46:01,465 [multiview_calib.bundle_adjustment_scipy] [INFO]>       24             25         2.5075e+02      1.04e-03       2.31e-03       2.95e+03
+2024-10-14 18:46:01,512 [multiview_calib.bundle_adjustment_scipy] [INFO]>       25             26         2.5075e+02      1.05e-03       2.27e-03       7.96e+02
+2024-10-14 18:46:01,559 [multiview_calib.bundle_adjustment_scipy] [INFO]>       26             27         2.5075e+02      1.03e-03       2.27e-03       2.24e+03
+2024-10-14 18:46:01,627 [multiview_calib.bundle_adjustment_scipy] [INFO]>       27             28         2.5075e+02      1.04e-03       2.29e-03       6.21e+02
+2024-10-14 18:46:01,776 [multiview_calib.bundle_adjustment_scipy] [INFO]>       28             29         2.5075e+02      1.04e-03       2.26e-03       1.67e+03
+2024-10-14 18:46:01,815 [multiview_calib.bundle_adjustment_scipy] [INFO]>       29             30         2.5075e+02      1.00e-03       2.17e-03       4.67e+02
+2024-10-14 18:46:01,858 [multiview_calib.bundle_adjustment_scipy] [INFO]>       30             31         2.5075e+02      1.07e-03       2.47e-03       1.27e+03
+2024-10-14 18:46:01,897 [multiview_calib.bundle_adjustment_scipy] [INFO]>       31             32         2.5075e+02      1.01e-03       2.06e-03       3.49e+02
+2024-10-14 18:46:01,943 [multiview_calib.bundle_adjustment_scipy] [INFO]>       32             33         2.5075e+02      1.08e-03       2.61e-03       9.23e+02
+2024-10-14 18:46:01,983 [multiview_calib.bundle_adjustment_scipy] [INFO]>       33             34         2.5074e+02      1.02e-03       1.94e-03       2.66e+02
+2024-10-14 18:46:02,025 [multiview_calib.bundle_adjustment_scipy] [INFO]>       34             35         2.5074e+02      1.08e-03       2.77e-03       6.45e+02
+2024-10-14 18:46:02,074 [multiview_calib.bundle_adjustment_scipy] [INFO]>       35             36         2.5074e+02      1.04e-03       1.87e-03       2.11e+02
+2024-10-14 18:46:02,126 [multiview_calib.bundle_adjustment_scipy] [INFO]>       36             37         2.5074e+02      1.09e-03       2.89e-03       4.43e+02
+2024-10-14 18:46:02,169 [multiview_calib.bundle_adjustment_scipy] [INFO]>       37             38         2.5074e+02      1.05e-03       1.81e-03       1.74e+02
+2024-10-14 18:46:02,212 [multiview_calib.bundle_adjustment_scipy] [INFO]>       38             39         2.5074e+02      1.10e-03       3.00e-03       3.05e+02
+2024-10-14 18:46:02,258 [multiview_calib.bundle_adjustment_scipy] [INFO]>       39             40         2.5074e+02      1.07e-03       1.76e-03       1.47e+02
+2024-10-14 18:46:02,299 [multiview_calib.bundle_adjustment_scipy] [INFO]>       40             41         2.5074e+02      1.11e-03       3.10e-03       2.30e+02
+2024-10-14 18:46:02,339 [multiview_calib.bundle_adjustment_scipy] [INFO]>       41             42         2.5074e+02      1.08e-03       1.72e-03       1.50e+02
+2024-10-14 18:46:02,385 [multiview_calib.bundle_adjustment_scipy] [INFO]>       42             43         2.5074e+02      1.13e-03       3.24e-03       2.11e+02
+2024-10-14 18:46:02,428 [multiview_calib.bundle_adjustment_scipy] [INFO]>       43             44         2.5073e+02      1.10e-03       1.67e-03       1.60e+02
+2024-10-14 18:46:02,468 [multiview_calib.bundle_adjustment_scipy] [INFO]>       44             45         2.5073e+02      1.15e-03       3.40e-03       1.92e+02
+2024-10-14 18:46:02,508 [multiview_calib.bundle_adjustment_scipy] [INFO]>       45             46         2.5073e+02      1.12e-03       1.61e-03       1.63e+02
+2024-10-14 18:46:02,548 [multiview_calib.bundle_adjustment_scipy] [INFO]>       46             47         2.5073e+02      1.19e-03       3.59e-03       1.73e+02
+2024-10-14 18:46:02,587 [multiview_calib.bundle_adjustment_scipy] [INFO]>       47             48         2.5073e+02      1.15e-03       1.56e-03       1.56e+02
+2024-10-14 18:46:02,627 [multiview_calib.bundle_adjustment_scipy] [INFO]>       48             49         2.5073e+02      1.22e-03       3.80e-03       1.54e+02
+2024-10-14 18:46:02,670 [multiview_calib.bundle_adjustment_scipy] [INFO]>       49             50         2.5073e+02      1.19e-03       1.52e-03       1.43e+02
+2024-10-14 18:46:02,708 [multiview_calib.bundle_adjustment_scipy] [INFO]>       50             51         2.5073e+02      1.26e-03       4.03e-03       1.37e+02
+2024-10-14 18:46:02,746 [multiview_calib.bundle_adjustment_scipy] [INFO]>       51             52         2.5072e+02      1.23e-03       1.48e-03       1.29e+02
+2024-10-14 18:46:02,784 [multiview_calib.bundle_adjustment_scipy] [INFO]>       52             53         2.5072e+02      1.31e-03       4.28e-03       1.23e+02
+2024-10-14 18:46:02,822 [multiview_calib.bundle_adjustment_scipy] [INFO]>       53             54         2.5072e+02      1.28e-03       1.44e-03       1.17e+02
+2024-10-14 18:46:02,859 [multiview_calib.bundle_adjustment_scipy] [INFO]>       54             55         2.5072e+02      1.36e-03       4.56e-03       1.25e+02
+2024-10-14 18:46:02,897 [multiview_calib.bundle_adjustment_scipy] [INFO]>       55             56         2.5072e+02      1.33e-03       1.40e-03       1.07e+02
+2024-10-14 18:46:02,935 [multiview_calib.bundle_adjustment_scipy] [INFO]>       56             57         2.5072e+02      1.42e-03       4.85e-03       1.24e+02
+2024-10-14 18:46:02,973 [multiview_calib.bundle_adjustment_scipy] [INFO]>       57             58         2.5072e+02      1.39e-03       1.37e-03       9.94e+01
+2024-10-14 18:46:03,010 [multiview_calib.bundle_adjustment_scipy] [INFO]>       58             59         2.5072e+02      1.48e-03       5.17e-03       1.20e+02
+2024-10-14 18:46:03,047 [multiview_calib.bundle_adjustment_scipy] [INFO]>       59             60         2.5071e+02      1.45e-03       1.34e-03       9.39e+01
+2024-10-14 18:46:03,085 [multiview_calib.bundle_adjustment_scipy] [INFO]>       60             61         2.5071e+02      1.28e-03       4.46e-03       9.07e+01
+2024-10-14 18:46:03,123 [multiview_calib.bundle_adjustment_scipy] [INFO]>       61             62         2.5071e+02      1.33e-03       1.38e-03       1.05e+02
+2024-10-14 18:46:03,160 [multiview_calib.bundle_adjustment_scipy] [INFO]>       62             63         2.5071e+02      1.21e-03       4.07e-03       8.45e+01
+2024-10-14 18:46:03,198 [multiview_calib.bundle_adjustment_scipy] [INFO]>       63             64         2.5071e+02      1.25e-03       1.42e-03       1.23e+02
+2024-10-14 18:46:03,235 [multiview_calib.bundle_adjustment_scipy] [INFO]>       64             65         2.5071e+02      1.32e-03       4.44e-03       8.19e+01
+2024-10-14 18:46:03,273 [multiview_calib.bundle_adjustment_scipy] [INFO]>       65             66         2.5071e+02      1.29e-03       1.39e-03       1.11e+02
+2024-10-14 18:46:03,311 [multiview_calib.bundle_adjustment_scipy] [INFO]>       66             67         2.5070e+02      1.31e-03       4.46e-03       9.87e+01
+2024-10-14 18:46:03,350 [multiview_calib.bundle_adjustment_scipy] [INFO]>       67             68         2.5070e+02      1.30e-03       1.37e-03       1.04e+02
+2024-10-14 18:46:03,388 [multiview_calib.bundle_adjustment_scipy] [INFO]>       68             69         2.5070e+02      1.16e-03       3.91e-03       1.44e+02
+2024-10-14 18:46:03,425 [multiview_calib.bundle_adjustment_scipy] [INFO]>       69             70         2.5070e+02      1.21e-03       1.42e-03       1.60e+02
+2024-10-14 18:46:03,463 [multiview_calib.bundle_adjustment_scipy] [INFO]>       70             71         2.5070e+02      1.29e-03       4.28e-03       1.61e+02
+2024-10-14 18:46:03,502 [multiview_calib.bundle_adjustment_scipy] [INFO]>       71             72         2.5070e+02      1.26e-03       1.39e-03       1.39e+02
+2024-10-14 18:46:03,540 [multiview_calib.bundle_adjustment_scipy] [INFO]>       72             73         2.5070e+02      1.24e-03       4.17e-03       1.91e+02
+2024-10-14 18:46:03,578 [multiview_calib.bundle_adjustment_scipy] [INFO]>       73             74         2.5070e+02      1.24e-03       1.39e-03       1.85e+02
+2024-10-14 18:46:03,617 [multiview_calib.bundle_adjustment_scipy] [INFO]>       74             75         2.5069e+02      1.21e-03       4.04e-03       2.56e+02
+2024-10-14 18:46:03,654 [multiview_calib.bundle_adjustment_scipy] [INFO]>       75             76         2.5069e+02      1.22e-03       1.40e-03       2.70e+02
+2024-10-14 18:46:03,691 [multiview_calib.bundle_adjustment_scipy] [INFO]>       76             77         2.5069e+02      1.08e-03       3.55e-03       1.59e+02
+2024-10-14 18:46:03,729 [multiview_calib.bundle_adjustment_scipy] [INFO]>       77             78         2.5069e+02      1.14e-03       1.46e-03       1.83e+02
+2024-10-14 18:46:03,767 [multiview_calib.bundle_adjustment_scipy] [INFO]>       78             79         2.5069e+02      9.20e-04       2.82e-03       2.24e+02
+2024-10-14 18:46:03,805 [multiview_calib.bundle_adjustment_scipy] [INFO]>       79             80         2.5069e+02      1.02e-03       1.61e-03       3.79e+02
+2024-10-14 18:46:03,842 [multiview_calib.bundle_adjustment_scipy] [INFO]>       80             81         2.5069e+02      7.66e-04       2.06e-03       1.26e+02
+2024-10-14 18:46:03,879 [multiview_calib.bundle_adjustment_scipy] [INFO]>       81             82         2.5069e+02      7.49e-04       1.33e-03       2.71e+02
+2024-10-14 18:46:03,917 [multiview_calib.bundle_adjustment_scipy] [INFO]>       82             83         2.5069e+02      4.68e-04       1.05e-03       1.13e+02
+2024-10-14 18:46:03,955 [multiview_calib.bundle_adjustment_scipy] [INFO]>       83             84         2.5069e+02      3.18e-04       5.65e-04       8.79e+01
+2024-10-14 18:46:03,992 [multiview_calib.bundle_adjustment_scipy] [INFO]>       84             85         2.5069e+02      4.33e-04       1.29e-03       2.61e+02
+2024-10-14 18:46:04,029 [multiview_calib.bundle_adjustment_scipy] [INFO]>       85             86         2.5069e+02      3.89e-04       5.33e-04       7.02e+01
+2024-10-14 18:46:04,069 [multiview_calib.bundle_adjustment_scipy] [INFO]>       86             87         2.5069e+02      3.99e-04       1.26e-03       1.45e+02
+2024-10-14 18:46:04,113 [multiview_calib.bundle_adjustment_scipy] [INFO]>       87             88         2.5069e+02      4.53e-04       6.99e-04       2.10e+02
+2024-10-14 18:46:04,152 [multiview_calib.bundle_adjustment_scipy] [INFO]>       88             89         2.5068e+02      3.60e-04       9.96e-04       8.55e+01
+2024-10-14 18:46:04,187 [multiview_calib.bundle_adjustment_scipy] [INFO]>       89             90         2.5068e+02      3.34e-04       5.43e-04       1.36e+02
+2024-10-14 18:46:04,234 [multiview_calib.bundle_adjustment_scipy] [INFO]>       90             91         2.5068e+02      1.12e-03       4.04e-03       5.25e+02
+2024-10-14 18:46:04,265 [multiview_calib.bundle_adjustment_scipy] [INFO]>       91             92         2.5068e+02      8.60e-04       3.34e-04       4.29e+01
+2024-10-14 18:46:04,296 [multiview_calib.bundle_adjustment_scipy] [INFO]>       92             93         2.5068e+02      1.06e-03       4.40e-03       1.03e+02
+2024-10-14 18:46:04,343 [multiview_calib.bundle_adjustment_scipy] [INFO]>       93             94         2.5068e+02      1.04e-03       3.21e-04       5.35e+01
+2024-10-14 18:46:04,374 [multiview_calib.bundle_adjustment_scipy] [INFO]>       94             95         2.5068e+02      1.26e-03       5.32e-03       1.11e+02
+2024-10-14 18:46:04,405 [multiview_calib.bundle_adjustment_scipy] [INFO]>       95             96         2.5068e+02      1.24e-03       3.11e-04       5.08e+01
+2024-10-14 18:46:04,452 [multiview_calib.bundle_adjustment_scipy] [INFO]>       96             97         2.5068e+02      1.51e-03       6.47e-03       1.20e+02
+2024-10-14 18:46:04,483 [multiview_calib.bundle_adjustment_scipy] [INFO]>       97             98         2.5068e+02      1.49e-03       3.14e-04       5.90e+01
+2024-10-14 18:46:04,515 [multiview_calib.bundle_adjustment_scipy] [INFO]>       98             99         2.5067e+02      1.71e-03       7.34e-03       1.29e+02
+2024-10-14 18:46:04,562 [multiview_calib.bundle_adjustment_scipy] [INFO]>       99             100        2.5067e+02      2.00e-03       1.10e-03       7.69e+01
+2024-10-14 18:46:04,593 [multiview_calib.bundle_adjustment_scipy] [INFO]>       100            101        2.5067e+02      4.03e-04       1.34e-03       4.62e+01
+2024-10-14 18:46:04,640 [multiview_calib.bundle_adjustment_scipy] [INFO]>       101            102        2.5067e+02      3.77e-04       4.15e-04       7.04e+01
+2024-10-14 18:46:04,671 [multiview_calib.bundle_adjustment_scipy] [INFO]>       102            103        2.5067e+02      4.49e-04       1.58e-03       5.87e+01
+2024-10-14 18:46:04,702 [multiview_calib.bundle_adjustment_scipy] [INFO]>       103            104        2.5067e+02      4.25e-04       3.88e-04       4.95e+01
+2024-10-14 18:46:04,749 [multiview_calib.bundle_adjustment_scipy] [INFO]>       104            105        2.5067e+02      5.15e-04       1.90e-03       7.33e+01
+2024-10-14 18:46:04,780 [multiview_calib.bundle_adjustment_scipy] [INFO]>       105            106        2.5067e+02      4.91e-04       3.67e-04       5.82e+01
+2024-10-14 18:46:04,812 [multiview_calib.bundle_adjustment_scipy] [INFO]>       106            107        2.5067e+02      6.01e-04       2.31e-03       6.70e+01
+2024-10-14 18:46:04,858 [multiview_calib.bundle_adjustment_scipy] [INFO]>       107            108        2.5067e+02      5.78e-04       3.50e-04       6.15e+01
+2024-10-14 18:46:04,890 [multiview_calib.bundle_adjustment_scipy] [INFO]>       108            109        2.5067e+02      7.13e-04       2.84e-03       7.43e+01
+2024-10-14 18:46:04,921 [multiview_calib.bundle_adjustment_scipy] [INFO]>       109            110        2.5067e+02      6.90e-04       3.35e-04       5.95e+01
+2024-10-14 18:46:04,968 [multiview_calib.bundle_adjustment_scipy] [INFO]>       110            111        2.5067e+02      8.54e-04       3.49e-03       8.24e+01
+2024-10-14 18:46:04,999 [multiview_calib.bundle_adjustment_scipy] [INFO]>       111            112        2.5066e+02      8.32e-04       3.23e-04       5.33e+01
+2024-10-14 18:46:05,046 [multiview_calib.bundle_adjustment_scipy] [INFO]>       112            113        2.5066e+02      1.03e-03       4.32e-03       9.21e+01
+2024-10-14 18:46:05,077 [multiview_calib.bundle_adjustment_scipy] [INFO]>       113            114        2.5066e+02      1.01e-03       3.12e-04       4.69e+01
+2024-10-14 18:46:05,108 [multiview_calib.bundle_adjustment_scipy] [INFO]>       114            115        2.5066e+02      1.25e-03       5.33e-03       9.94e+01
+2024-10-14 18:46:05,155 [multiview_calib.bundle_adjustment_scipy] [INFO]>       115            116        2.5066e+02      1.23e-03       3.05e-04       4.97e+01
+2024-10-14 18:46:05,186 [multiview_calib.bundle_adjustment_scipy] [INFO]>       116            117        2.5066e+02      1.49e-03       6.38e-03       1.10e+02
+2024-10-14 18:46:05,233 [multiview_calib.bundle_adjustment_scipy] [INFO]>       117            118        2.5066e+02      1.53e-03       4.86e-04       5.97e+01
+2024-10-14 18:46:05,265 [multiview_calib.bundle_adjustment_scipy] [INFO]>       118            119        2.5066e+02      7.45e-04       2.94e-03       5.66e+01
+2024-10-14 18:46:05,296 [multiview_calib.bundle_adjustment_scipy] [INFO]>       119            120        2.5066e+02      9.46e-04       9.98e-04       6.45e+01
+2024-10-14 18:46:05,343 [multiview_calib.bundle_adjustment_scipy] [INFO]>       120            121        2.5065e+02      3.31e-04       9.17e-04       3.42e+01
+2024-10-14 18:46:05,374 [multiview_calib.bundle_adjustment_scipy] [INFO]>       121            122        2.5065e+02      3.01e-04       4.95e-04       5.94e+01
+2024-10-14 18:46:05,405 [multiview_calib.bundle_adjustment_scipy] [INFO]>       122            123        2.5065e+02      3.51e-04       1.06e-03       9.55e+01
+2024-10-14 18:46:05,452 [multiview_calib.bundle_adjustment_scipy] [INFO]>       123            124        2.5065e+02      3.23e-04       4.52e-04       7.63e+01
+2024-10-14 18:46:05,483 [multiview_calib.bundle_adjustment_scipy] [INFO]>       124            125        2.5065e+02      3.82e-04       1.25e-03       7.44e+01
+2024-10-14 18:46:05,530 [multiview_calib.bundle_adjustment_scipy] [INFO]>       125            126        2.5065e+02      3.56e-04       4.17e-04       1.11e+02
+2024-10-14 18:46:05,561 [multiview_calib.bundle_adjustment_scipy] [INFO]>       126            127        2.5065e+02      4.27e-04       1.49e-03       7.05e+01
+2024-10-14 18:46:05,593 [multiview_calib.bundle_adjustment_scipy] [INFO]>       127            128        2.5065e+02      4.02e-04       3.90e-04       1.01e+02
+2024-10-14 18:46:05,639 [multiview_calib.bundle_adjustment_scipy] [INFO]>       128            129        2.5065e+02      4.90e-04       1.80e-03       1.08e+02
+2024-10-14 18:46:05,671 [multiview_calib.bundle_adjustment_scipy] [INFO]>       129            130        2.5065e+02      4.66e-04       3.67e-04       1.02e+02
+2024-10-14 18:46:05,702 [multiview_calib.bundle_adjustment_scipy] [INFO]>       130            131        2.5065e+02      5.69e-04       2.19e-03       9.80e+01
+2024-10-14 18:46:05,749 [multiview_calib.bundle_adjustment_scipy] [INFO]>       131            132        2.5065e+02      5.46e-04       3.49e-04       8.92e+01
+2024-10-14 18:46:05,780 [multiview_calib.bundle_adjustment_scipy] [INFO]>       132            133        2.5065e+02      6.72e-04       2.68e-03       9.04e+01
+2024-10-14 18:46:05,827 [multiview_calib.bundle_adjustment_scipy] [INFO]>       133            134        2.5065e+02      6.50e-04       3.34e-04       7.79e+01
+2024-10-14 18:46:05,858 [multiview_calib.bundle_adjustment_scipy] [INFO]>       134            135        2.5065e+02      8.03e-04       3.29e-03       7.66e+01
+2024-10-14 18:46:05,889 [multiview_calib.bundle_adjustment_scipy] [INFO]>       135            136        2.5065e+02      7.81e-04       3.22e-04       5.93e+01
+2024-10-14 18:46:05,952 [multiview_calib.bundle_adjustment_scipy] [INFO]>       136            137        2.5065e+02      9.70e-04       4.06e-03       7.34e+01
+2024-10-14 18:46:05,983 [multiview_calib.bundle_adjustment_scipy] [INFO]>       137            138        2.5065e+02      9.47e-04       3.11e-04       4.28e+01
+2024-10-14 18:46:06,014 [multiview_calib.bundle_adjustment_scipy] [INFO]>       138            139        2.5064e+02      1.18e-03       5.04e-03       8.10e+01
+2024-10-14 18:46:06,061 [multiview_calib.bundle_adjustment_scipy] [INFO]>       139            140        2.5064e+02      1.16e-03       3.02e-04       5.02e+01
+2024-10-14 18:46:06,092 [multiview_calib.bundle_adjustment_scipy] [INFO]>       140            141        2.5064e+02      1.45e-03       6.27e-03       1.19e+02
+2024-10-14 18:46:06,124 [multiview_calib.bundle_adjustment_scipy] [INFO]>       141            142        2.5064e+02      1.42e-03       2.94e-04       5.95e+01
+2024-10-14 18:46:06,171 [multiview_calib.bundle_adjustment_scipy] [INFO]>       142            143        2.5064e+02      1.78e-03       7.81e-03       1.80e+02
+2024-10-14 18:46:06,202 [multiview_calib.bundle_adjustment_scipy] [INFO]>       143            144        2.5064e+02      1.75e-03       2.88e-04       6.78e+01
+2024-10-14 18:46:06,233 [multiview_calib.bundle_adjustment_scipy] [INFO]>       144            145        2.5063e+02      2.20e-03       9.76e-03       2.67e+02
+2024-10-14 18:46:06,280 [multiview_calib.bundle_adjustment_scipy] [INFO]>       145            146        2.5063e+02      2.17e-03       2.82e-04       7.61e+01
+2024-10-14 18:46:06,311 [multiview_calib.bundle_adjustment_scipy] [INFO]>       146            147        2.5063e+02      2.71e-03       1.21e-02       3.86e+02
+2024-10-14 18:46:06,342 [multiview_calib.bundle_adjustment_scipy] [INFO]>       147            148        2.5063e+02      2.66e-03       2.86e-04       8.45e+01
+2024-10-14 18:46:06,389 [multiview_calib.bundle_adjustment_scipy] [INFO]>       148            149        2.5062e+02      1.97e-03       8.56e-03       2.16e+02
+2024-10-14 18:46:06,421 [multiview_calib.bundle_adjustment_scipy] [INFO]>       149            150        2.5062e+02      2.19e-03       1.06e-03       7.02e+01
+2024-10-14 18:46:06,452 [multiview_calib.bundle_adjustment_scipy] [INFO]>       150            151        2.5062e+02      5.71e-04       2.12e-03       4.45e+01
+2024-10-14 18:46:06,499 [multiview_calib.bundle_adjustment_scipy] [INFO]>       151            152        2.5062e+02      5.14e-04       3.88e-04       2.79e+01
+2024-10-14 18:46:06,530 [multiview_calib.bundle_adjustment_scipy] [INFO]>       152            153        2.5062e+02      6.69e-04       2.53e-03       5.45e+01
+2024-10-14 18:46:06,561 [multiview_calib.bundle_adjustment_scipy] [INFO]>       153            154        2.5062e+02      5.92e-04       3.66e-04       4.70e+01
+2024-10-14 18:46:06,608 [multiview_calib.bundle_adjustment_scipy] [INFO]>       154            155        2.5062e+02      5.83e-04       2.25e-03       3.73e+01
+2024-10-14 18:46:06,639 [multiview_calib.bundle_adjustment_scipy] [INFO]>       155            156        2.5062e+02      5.48e-04       3.67e-04       2.85e+01
+2024-10-14 18:46:06,670 [multiview_calib.bundle_adjustment_scipy] [INFO]>       156            157        2.5062e+02      6.03e-04       2.32e-03       3.58e+01
+2024-10-14 18:46:06,717 [multiview_calib.bundle_adjustment_scipy] [INFO]>       157            158        2.5062e+02      5.64e-04       3.76e-04       3.11e+01
+2024-10-14 18:46:06,749 [multiview_calib.bundle_adjustment_scipy] [INFO]>       158            159        2.5062e+02      9.79e-04       3.95e-03       4.77e+01
+2024-10-14 18:46:06,780 [multiview_calib.bundle_adjustment_scipy] [INFO]>       159            160        2.5062e+02      1.14e-03       1.01e-03       2.00e+02
+2024-10-14 18:46:06,827 [multiview_calib.bundle_adjustment_scipy] [INFO]>       160            161        2.5062e+02      3.25e-04       9.61e-04       3.51e+01
+2024-10-14 18:46:06,858 [multiview_calib.bundle_adjustment_scipy] [INFO]>       161            162        2.5062e+02      2.97e-04       4.59e-04       8.33e+01
+2024-10-14 18:46:06,889 [multiview_calib.bundle_adjustment_scipy] [INFO]>       162            163        2.5062e+02      3.48e-04       1.12e-03       8.27e+01
+2024-10-14 18:46:06,936 [multiview_calib.bundle_adjustment_scipy] [INFO]>       163            164        2.5061e+02      3.23e-04       4.22e-04       5.85e+01
+2024-10-14 18:46:06,967 [multiview_calib.bundle_adjustment_scipy] [INFO]>       164            165        2.5061e+02      3.84e-04       1.32e-03       6.73e+01
+2024-10-14 18:46:06,998 [multiview_calib.bundle_adjustment_scipy] [INFO]>       165            166        2.5061e+02      3.60e-04       3.92e-04       8.26e+01
+2024-10-14 18:46:07,045 [multiview_calib.bundle_adjustment_scipy] [INFO]>       166            167        2.5061e+02      4.33e-04       1.58e-03       6.79e+01
+2024-10-14 18:46:07,077 [multiview_calib.bundle_adjustment_scipy] [INFO]>       167            168        2.5061e+02      4.10e-04       3.68e-04       5.83e+01
+2024-10-14 18:46:07,108 [multiview_calib.bundle_adjustment_scipy] [INFO]>       168            169        2.5061e+02      4.98e-04       1.90e-03       5.71e+01
+2024-10-14 18:46:07,155 [multiview_calib.bundle_adjustment_scipy] [INFO]>       169            170        2.5061e+02      4.76e-04       3.49e-04       5.11e+01
+2024-10-14 18:46:07,186 [multiview_calib.bundle_adjustment_scipy] [INFO]>       170            171        2.5061e+02      5.82e-04       2.31e-03       4.17e+01
+2024-10-14 18:46:07,217 [multiview_calib.bundle_adjustment_scipy] [INFO]>       171            172        2.5061e+02      5.61e-04       3.33e-04       3.45e+01
+2024-10-14 18:46:07,264 [multiview_calib.bundle_adjustment_scipy] [INFO]>       172            173        2.5061e+02      6.91e-04       2.83e-03       4.15e+01
+2024-10-14 18:46:07,295 [multiview_calib.bundle_adjustment_scipy] [INFO]>       173            174        2.5061e+02      6.70e-04       3.20e-04       3.53e+01
+2024-10-14 18:46:07,327 [multiview_calib.bundle_adjustment_scipy] [INFO]>       174            175        2.5061e+02      8.30e-04       3.49e-03       5.14e+01
+2024-10-14 18:46:07,373 [multiview_calib.bundle_adjustment_scipy] [INFO]>       175            176        2.5061e+02      8.08e-04       3.09e-04       4.23e+01
+2024-10-14 18:46:07,405 [multiview_calib.bundle_adjustment_scipy] [INFO]>       176            177        2.5061e+02      1.01e-03       4.32e-03       7.50e+01
+2024-10-14 18:46:07,436 [multiview_calib.bundle_adjustment_scipy] [INFO]>       177            178        2.5061e+02      9.84e-04       2.99e-04       4.92e+01
+2024-10-14 18:46:07,483 [multiview_calib.bundle_adjustment_scipy] [INFO]>       178            179        2.5060e+02      1.23e-03       5.37e-03       1.10e+02
+2024-10-14 18:46:07,514 [multiview_calib.bundle_adjustment_scipy] [INFO]>       179            180        2.5060e+02      1.21e-03       2.91e-04       5.62e+01
+2024-10-14 18:46:07,545 [multiview_calib.bundle_adjustment_scipy] [INFO]>       180            181        2.5060e+02      1.51e-03       6.70e-03       1.59e+02
+2024-10-14 18:46:07,592 [multiview_calib.bundle_adjustment_scipy] [INFO]>       181            182        2.5060e+02      1.49e-03       2.84e-04       6.32e+01
+2024-10-14 18:46:07,623 [multiview_calib.bundle_adjustment_scipy] [INFO]>       182            183        2.5060e+02      1.87e-03       8.38e-03       2.29e+02
+2024-10-14 18:46:07,655 [multiview_calib.bundle_adjustment_scipy] [INFO]>       183            184        2.5060e+02      1.84e-03       2.80e-04       7.06e+01
+2024-10-14 18:46:07,701 [multiview_calib.bundle_adjustment_scipy] [INFO]>       184            185        2.5059e+02      2.31e-03       1.04e-02       3.17e+02
+2024-10-14 18:46:07,733 [multiview_calib.bundle_adjustment_scipy] [INFO]>       185            186        2.5059e+02      2.25e-03       2.71e-04       7.79e+01
+2024-10-14 18:46:07,764 [multiview_calib.bundle_adjustment_scipy] [INFO]>       186            187        2.5059e+02      3.00e-03       1.31e-02       2.52e+02
+2024-10-14 18:46:07,811 [multiview_calib.bundle_adjustment_scipy] [INFO]>       187            188        2.5059e+02      3.04e-03       1.10e-03       7.48e+01
+2024-10-14 18:46:07,842 [multiview_calib.bundle_adjustment_scipy] [INFO]>       188            189        2.5059e+02      8.47e-04       3.45e-03       1.22e+02
+2024-10-14 18:46:07,889 [multiview_calib.bundle_adjustment_scipy] [INFO]>       189            190        2.5058e+02      1.04e-03       1.07e-03       8.07e+01
+2024-10-14 18:46:07,920 [multiview_calib.bundle_adjustment_scipy] [INFO]>       190            191        2.5058e+02      3.07e-04       8.66e-04       2.38e+01
+2024-10-14 18:46:07,951 [multiview_calib.bundle_adjustment_scipy] [INFO]>       191            192        2.5058e+02      2.76e-04       4.74e-04       1.54e+01
+2024-10-14 18:46:07,998 [multiview_calib.bundle_adjustment_scipy] [INFO]>       192            193        2.5058e+02      3.22e-04       1.00e-03       2.35e+01
+2024-10-14 18:46:08,030 [multiview_calib.bundle_adjustment_scipy] [INFO]>       193            194        2.5058e+02      2.96e-04       4.33e-04       8.30e+01
+2024-10-14 18:46:08,061 [multiview_calib.bundle_adjustment_scipy] [INFO]>       194            195        2.5058e+02      3.49e-04       1.17e-03       2.49e+01
+2024-10-14 18:46:08,108 [multiview_calib.bundle_adjustment_scipy] [INFO]>       195            196        2.5058e+02      3.25e-04       4.00e-04       2.58e+01
+2024-10-14 18:46:08,139 [multiview_calib.bundle_adjustment_scipy] [INFO]>       196            197        2.5058e+02      3.88e-04       1.39e-03       3.39e+01
+2024-10-14 18:46:08,170 [multiview_calib.bundle_adjustment_scipy] [INFO]>       197            198        2.5058e+02      3.66e-04       3.73e-04       7.05e+01
+2024-10-14 18:46:08,217 [multiview_calib.bundle_adjustment_scipy] [INFO]>       198            199        2.5058e+02      4.41e-04       1.67e-03       3.29e+01
+2024-10-14 18:46:08,248 [multiview_calib.bundle_adjustment_scipy] [INFO]>       199            200        2.5058e+02      4.20e-04       3.52e-04       3.62e+01
+2024-10-14 18:46:08,248 [multiview_calib.bundle_adjustment_scipy] [INFO]> The maximum number of function evaluations is exceeded.
+2024-10-14 18:46:08,248 [multiview_calib.bundle_adjustment_scipy] [INFO]> Function evaluations 200, initial cost 9.8580e+05, final cost 2.5058e+02, first-order optimality 3.62e+01.
+2024-10-14 18:46:08,248 [root] [INFO]> Optimization took 8 seconds
+2024-10-14 18:46:08,248 [root] [INFO]> Average absolute residual: 0.30 over 2160.0 points.
+2024-10-14 18:46:08,483 [root] [INFO]> Outlier rejection:
+2024-10-14 18:46:08,483 [root] [INFO]> 	 threshold outliers: 50
+2024-10-14 18:46:08,483 [root] [INFO]> 	 max_nfev=200
+2024-10-14 18:46:08,483 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-10-14 18:46:08,483 [root] [INFO]> 	 Exit.
+2024-10-14 18:46:08,483 [root] [INFO]> Reprojection errors (mean+-std pixels):
+2024-10-14 18:46:08,483 [root] [INFO]> 	 cam0 n_points=720: 0.538+-0.131
+2024-10-14 18:46:08,483 [root] [INFO]> 	 cam1 n_points=720: 0.240+-0.108
+2024-10-14 18:46:08,498 [root] [INFO]> 	 cam2 n_points=720: 0.551+-0.130
+2024-10-14 18:46:08,498 [root] [INFO]> Reprojection errors (median pixels):
+2024-10-14 18:46:08,498 [root] [INFO]> 	 cam0 n_points=720: 0.544
+2024-10-14 18:46:08,498 [root] [INFO]> 	 cam1 n_points=720: 0.231
+2024-10-14 18:46:08,498 [root] [INFO]> 	 cam2 n_points=720: 0.547
+2024-10-14 18:46:08,498 [root] [INFO]> Visualise all the annotations.
+2024-10-15 11:08:21,264 [root] [INFO]> --------------------
+2024-10-15 11:08:21,264 [root] [INFO]> Views: ['cam0', 'cam1', 'cam2']
+2024-10-15 11:08:21,265 [root] [INFO]> Use all the landmarks.
+2024-10-15 11:08:21,265 [root] [INFO]> Preparing the input data...(this can take a while depending on the number of points to triangulate)
+2024-10-15 11:08:21,345 [root] [INFO]> The preparation of the input data took: 0.08s
+2024-10-15 11:08:21,345 [root] [INFO]> Sizes:
+2024-10-15 11:08:21,345 [root] [INFO]> 	 camera_params: (3, 15)
+2024-10-15 11:08:21,345 [root] [INFO]> 	 points_3d: (864, 3)
+2024-10-15 11:08:21,346 [root] [INFO]> 	 points_2d: (2592, 2)
+2024-10-15 11:08:21,645 [root] [INFO]> Early Outlier rejection:
+2024-10-15 11:08:21,645 [root] [INFO]> 	 threshold outliers: 1000.0
+2024-10-15 11:08:21,647 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-10-15 11:08:21,954 [root] [INFO]> Bounded optimization:
+2024-10-15 11:08:21,954 [root] [INFO]> 	 LB(x)=x-bound; UB(x)=x+bound
+2024-10-15 11:08:21,954 [root] [INFO]> 	 rvec bounds=(0.3,0.3,0.3)
+2024-10-15 11:08:21,954 [root] [INFO]> 	 tvec bounds=(2,2,2)
+2024-10-15 11:08:21,955 [root] [INFO]> 	 k bounds=(fx=10,fy=10,c0=10,c1=10)
+2024-10-15 11:08:21,955 [root] [INFO]> 	 dist bounds=(0.01,0.01,0,0,0)
+2024-10-15 11:08:21,955 [root] [INFO]> 	 3d points bounds=(x=1000,y=1000,z=1000)
+2024-10-15 11:08:21,955 [root] [INFO]> Least-Squares optimization of 3D points and camera parameters:
+2024-10-15 11:08:21,955 [root] [INFO]> 	 optimize camera parameters: True
+2024-10-15 11:08:21,955 [root] [INFO]> 	 optimize 3d points: True
+2024-10-15 11:08:21,955 [root] [INFO]> 	 ftol=1.000e-08
+2024-10-15 11:08:21,955 [root] [INFO]> 	 xtol=1.000e-08
+2024-10-15 11:08:21,956 [root] [INFO]> 	 loss=linear f_scale=1.00
+2024-10-15 11:08:21,956 [root] [INFO]> 	 max_nfev=200
+2024-10-15 11:08:22,018 [multiview_calib.bundle_adjustment_scipy] [INFO]>    Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality
+2024-10-15 11:08:22,019 [multiview_calib.bundle_adjustment_scipy] [INFO]>        0              1         8.2415e+05                                    2.58e+08
+2024-10-15 11:08:22,085 [multiview_calib.bundle_adjustment_scipy] [INFO]>        1              2         7.7190e+03      8.16e+05       3.64e+00       4.98e+06
+2024-10-15 11:08:22,149 [multiview_calib.bundle_adjustment_scipy] [INFO]>        2              3         4.4091e+02      7.28e+03       2.31e+00       2.04e+06
+2024-10-15 11:08:22,208 [multiview_calib.bundle_adjustment_scipy] [INFO]>        3              4         3.6850e+02      7.24e+01       2.98e+00       9.57e+04
+2024-10-15 11:08:22,272 [multiview_calib.bundle_adjustment_scipy] [INFO]>        4              5         3.5512e+02      1.34e+01       9.07e+00       1.75e+05
+2024-10-15 11:08:22,325 [multiview_calib.bundle_adjustment_scipy] [INFO]>        5              6         3.5251e+02      2.61e+00       2.16e+00       1.02e+05
+2024-10-15 11:08:22,380 [multiview_calib.bundle_adjustment_scipy] [INFO]>        6              7         3.5115e+02      1.36e+00       1.28e+00       7.12e+04
+2024-10-15 11:08:22,434 [multiview_calib.bundle_adjustment_scipy] [INFO]>        7              8         3.4957e+02      1.59e+00       1.69e+00       4.02e+04
+2024-10-15 11:08:22,491 [multiview_calib.bundle_adjustment_scipy] [INFO]>        8              9         3.4872e+02      8.48e-01       1.07e+00       2.85e+04
+2024-10-15 11:08:22,545 [multiview_calib.bundle_adjustment_scipy] [INFO]>        9             10         3.4823e+02      4.87e-01       6.98e-01       2.42e+04
+2024-10-15 11:08:22,598 [multiview_calib.bundle_adjustment_scipy] [INFO]>       10             11         3.4807e+02      1.57e-01       3.49e-01       7.31e+03
+2024-10-15 11:08:22,649 [multiview_calib.bundle_adjustment_scipy] [INFO]>       11             12         3.4794e+02      1.33e-01       1.06e-01       4.48e+03
+2024-10-15 11:08:22,700 [multiview_calib.bundle_adjustment_scipy] [INFO]>       12             13         3.4784e+02      1.05e-01       2.48e-01       3.02e+03
+2024-10-15 11:08:22,748 [multiview_calib.bundle_adjustment_scipy] [INFO]>       13             14         3.4773e+02      1.01e-01       1.09e-01       2.98e+03
+2024-10-15 11:08:22,799 [multiview_calib.bundle_adjustment_scipy] [INFO]>       14             15         3.4771e+02      2.09e-02       3.21e-02       1.82e+03
+2024-10-15 11:08:22,852 [multiview_calib.bundle_adjustment_scipy] [INFO]>       15             16         3.4770e+02      1.02e-02       9.32e-03       5.55e+02
+2024-10-15 11:08:22,899 [multiview_calib.bundle_adjustment_scipy] [INFO]>       16             17         3.4769e+02      8.69e-03       2.10e-02       1.13e+03
+2024-10-15 11:08:22,947 [multiview_calib.bundle_adjustment_scipy] [INFO]>       17             18         3.4769e+02      7.91e-03       7.83e-03       3.97e+02
+2024-10-15 11:08:22,993 [multiview_calib.bundle_adjustment_scipy] [INFO]>       18             19         3.4768e+02      9.05e-03       2.41e-02       9.67e+02
+2024-10-15 11:08:23,039 [multiview_calib.bundle_adjustment_scipy] [INFO]>       19             20         3.4767e+02      8.41e-03       7.62e-03       2.46e+02
+2024-10-15 11:08:23,088 [multiview_calib.bundle_adjustment_scipy] [INFO]>       20             21         3.4766e+02      1.04e-02       2.95e-02       9.02e+02
+2024-10-15 11:08:23,137 [multiview_calib.bundle_adjustment_scipy] [INFO]>       21             22         3.4765e+02      9.74e-03       7.68e-03       1.73e+02
+2024-10-15 11:08:23,183 [multiview_calib.bundle_adjustment_scipy] [INFO]>       22             23         3.4764e+02      1.38e-02       4.16e-02       9.06e+02
+2024-10-15 11:08:23,229 [multiview_calib.bundle_adjustment_scipy] [INFO]>       23             24         3.4762e+02      1.31e-02       8.48e-03       1.85e+02
+2024-10-15 11:08:23,274 [multiview_calib.bundle_adjustment_scipy] [INFO]>       24             25         3.4761e+02      7.56e-03       2.19e-02       5.65e+02
+2024-10-15 11:08:23,321 [multiview_calib.bundle_adjustment_scipy] [INFO]>       25             26         3.4761e+02      7.76e-03       6.95e-03       1.23e+02
+2024-10-15 11:08:23,368 [multiview_calib.bundle_adjustment_scipy] [INFO]>       26             27         3.4760e+02      6.63e-03       1.85e-02       4.09e+02
+2024-10-15 11:08:23,417 [multiview_calib.bundle_adjustment_scipy] [INFO]>       27             28         3.4759e+02      6.53e-03       6.05e-03       1.55e+02
+2024-10-15 11:08:23,465 [multiview_calib.bundle_adjustment_scipy] [INFO]>       28             29         3.4759e+02      6.10e-03       1.71e-02       2.96e+02
+2024-10-15 11:08:23,510 [multiview_calib.bundle_adjustment_scipy] [INFO]>       29             30         3.4758e+02      5.93e-03       5.28e-03       1.18e+02
+2024-10-15 11:08:23,556 [multiview_calib.bundle_adjustment_scipy] [INFO]>       30             31         3.4758e+02      6.08e-03       1.75e-02       2.35e+02
+2024-10-15 11:08:23,603 [multiview_calib.bundle_adjustment_scipy] [INFO]>       31             32         3.4757e+02      5.92e-03       4.97e-03       9.89e+01
+2024-10-15 11:08:23,648 [multiview_calib.bundle_adjustment_scipy] [INFO]>       32             33         3.4757e+02      4.14e-03       1.14e-02       1.64e+02
+2024-10-15 11:08:23,694 [multiview_calib.bundle_adjustment_scipy] [INFO]>       33             34         3.4756e+02      4.38e-03       4.75e-03       6.05e+01
+2024-10-15 11:08:23,744 [multiview_calib.bundle_adjustment_scipy] [INFO]>       34             35         3.4756e+02      4.13e-03       1.09e-02       1.54e+02
+2024-10-15 11:08:23,790 [multiview_calib.bundle_adjustment_scipy] [INFO]>       35             36         3.4755e+02      4.49e-03       5.53e-03       1.10e+02
+2024-10-15 11:08:23,836 [multiview_calib.bundle_adjustment_scipy] [INFO]>       36             37         3.4755e+02      3.96e-03       9.77e-03       1.48e+02
+2024-10-15 11:08:23,880 [multiview_calib.bundle_adjustment_scipy] [INFO]>       37             38         3.4754e+02      3.96e-03       5.21e-03       1.46e+02
+2024-10-15 11:08:23,926 [multiview_calib.bundle_adjustment_scipy] [INFO]>       38             39         3.4754e+02      3.66e-03       8.85e-03       1.71e+02
+2024-10-15 11:08:23,972 [multiview_calib.bundle_adjustment_scipy] [INFO]>       39             40         3.4754e+02      4.04e-03       6.00e-03       2.11e+02
+2024-10-15 11:08:24,019 [multiview_calib.bundle_adjustment_scipy] [INFO]>       40             41         3.4753e+02      3.56e-03       7.89e-03       1.68e+02
+2024-10-15 11:08:24,064 [multiview_calib.bundle_adjustment_scipy] [INFO]>       41             42         3.4753e+02      3.85e-03       6.43e-03       1.78e+02
+2024-10-15 11:08:24,111 [multiview_calib.bundle_adjustment_scipy] [INFO]>       42             43         3.4753e+02      3.68e-03       7.71e-03       2.44e+02
+2024-10-15 11:08:24,156 [multiview_calib.bundle_adjustment_scipy] [INFO]>       43             44         3.4752e+02      3.42e-03       5.61e-03       1.86e+02
+2024-10-15 11:08:24,202 [multiview_calib.bundle_adjustment_scipy] [INFO]>       44             45         3.4752e+02      3.17e-03       6.72e-03       2.15e+02
+2024-10-15 11:08:24,246 [multiview_calib.bundle_adjustment_scipy] [INFO]>       45             46         3.4752e+02      3.13e-03       5.27e-03       2.57e+02
+2024-10-15 11:08:24,292 [multiview_calib.bundle_adjustment_scipy] [INFO]>       46             47         3.4751e+02      2.33e-03       4.38e-03       1.72e+02
+2024-10-15 11:08:24,337 [multiview_calib.bundle_adjustment_scipy] [INFO]>       47             48         3.4751e+02      1.60e-03       2.48e-03       9.16e+01
+2024-10-15 11:08:24,382 [multiview_calib.bundle_adjustment_scipy] [INFO]>       48             49         3.4751e+02      1.61e-03       3.69e-03       1.61e+02
+2024-10-15 11:08:24,428 [multiview_calib.bundle_adjustment_scipy] [INFO]>       49             50         3.4751e+02      1.56e-03       2.37e-03       9.40e+01
+2024-10-15 11:08:24,474 [multiview_calib.bundle_adjustment_scipy] [INFO]>       50             51         3.4751e+02      1.64e-03       3.87e-03       1.37e+02
+2024-10-15 11:08:24,519 [multiview_calib.bundle_adjustment_scipy] [INFO]>       51             52         3.4751e+02      1.59e-03       2.31e-03       1.02e+02
+2024-10-15 11:08:24,565 [multiview_calib.bundle_adjustment_scipy] [INFO]>       52             53         3.4750e+02      1.68e-03       4.10e-03       1.37e+02
+2024-10-15 11:08:24,610 [multiview_calib.bundle_adjustment_scipy] [INFO]>       53             54         3.4750e+02      1.63e-03       2.24e-03       9.09e+01
+2024-10-15 11:08:24,655 [multiview_calib.bundle_adjustment_scipy] [INFO]>       54             55         3.4750e+02      1.74e-03       4.39e-03       1.38e+02
+2024-10-15 11:08:24,701 [multiview_calib.bundle_adjustment_scipy] [INFO]>       55             56         3.4750e+02      1.68e-03       2.17e-03       8.72e+01
+2024-10-15 11:08:24,746 [multiview_calib.bundle_adjustment_scipy] [INFO]>       56             57         3.4750e+02      1.82e-03       4.76e-03       1.33e+02
+2024-10-15 11:08:24,793 [multiview_calib.bundle_adjustment_scipy] [INFO]>       57             58         3.4750e+02      1.76e-03       2.10e-03       8.18e+01
+2024-10-15 11:08:24,838 [multiview_calib.bundle_adjustment_scipy] [INFO]>       58             59         3.4749e+02      1.96e-03       5.35e-03       1.34e+02
+2024-10-15 11:08:24,883 [multiview_calib.bundle_adjustment_scipy] [INFO]>       59             60         3.4749e+02      1.88e-03       2.03e-03       7.44e+01
+2024-10-15 11:08:24,928 [multiview_calib.bundle_adjustment_scipy] [INFO]>       60             61         3.4749e+02      2.31e-03       6.67e-03       1.44e+02
+2024-10-15 11:08:24,973 [multiview_calib.bundle_adjustment_scipy] [INFO]>       61             62         3.4749e+02      2.17e-03       1.92e-03       6.42e+01
+2024-10-15 11:08:25,018 [multiview_calib.bundle_adjustment_scipy] [INFO]>       62             63         3.4748e+02      8.81e-03       2.99e-02       3.76e+02
+2024-10-15 11:08:25,063 [multiview_calib.bundle_adjustment_scipy] [INFO]>       63             64         3.4747e+02      7.65e-03       1.85e-03       1.16e+02
+2024-10-15 11:08:25,108 [multiview_calib.bundle_adjustment_scipy] [INFO]>       64             65         3.4746e+02      9.73e-03       3.54e-02       3.82e+02
+2024-10-15 11:08:25,153 [multiview_calib.bundle_adjustment_scipy] [INFO]>       65             66         3.4745e+02      9.37e-03       1.87e-03       1.24e+02
+2024-10-15 11:08:25,200 [multiview_calib.bundle_adjustment_scipy] [INFO]>       66             67         3.4744e+02      1.01e-02       3.63e-02       3.98e+02
+2024-10-15 11:08:25,246 [multiview_calib.bundle_adjustment_scipy] [INFO]>       67             68         3.4743e+02      1.09e-02       5.06e-03       1.11e+02
+2024-10-15 11:08:25,291 [multiview_calib.bundle_adjustment_scipy] [INFO]>       68             69         3.4743e+02      2.29e-03       6.92e-03       1.06e+02
+2024-10-15 11:08:25,336 [multiview_calib.bundle_adjustment_scipy] [INFO]>       69             70         3.4743e+02      3.01e-03       3.97e-03       1.23e+02
+2024-10-15 11:08:25,381 [multiview_calib.bundle_adjustment_scipy] [INFO]>       70             71         3.4742e+02      1.36e-03       2.74e-03       4.06e+01
+2024-10-15 11:08:25,426 [multiview_calib.bundle_adjustment_scipy] [INFO]>       71             72         3.4742e+02      1.43e-03       2.86e-03       4.67e+01
+2024-10-15 11:08:25,472 [multiview_calib.bundle_adjustment_scipy] [INFO]>       72             73         3.4742e+02      1.35e-03       2.57e-03       5.56e+01
+2024-10-15 11:08:25,516 [multiview_calib.bundle_adjustment_scipy] [INFO]>       73             74         3.4742e+02      1.45e-03       3.08e-03       4.84e+01
+2024-10-15 11:08:25,562 [multiview_calib.bundle_adjustment_scipy] [INFO]>       74             75         3.4742e+02      1.35e-03       2.39e-03       4.24e+01
+2024-10-15 11:08:25,606 [multiview_calib.bundle_adjustment_scipy] [INFO]>       75             76         3.4742e+02      1.54e-03       3.56e-03       6.17e+01
+2024-10-15 11:08:25,651 [multiview_calib.bundle_adjustment_scipy] [INFO]>       76             77         3.4742e+02      1.40e-03       2.17e-03       4.38e+01
+2024-10-15 11:08:25,696 [multiview_calib.bundle_adjustment_scipy] [INFO]>       77             78         3.4741e+02      4.89e-03       1.53e-02       2.18e+02
+2024-10-15 11:08:25,741 [multiview_calib.bundle_adjustment_scipy] [INFO]>       78             79         3.4741e+02      3.68e-03       1.41e-03       8.18e+01
+2024-10-15 11:08:25,786 [multiview_calib.bundle_adjustment_scipy] [INFO]>       79             80         3.4740e+02      5.02e-03       1.83e-02       1.51e+02
+2024-10-15 11:08:25,832 [multiview_calib.bundle_adjustment_scipy] [INFO]>       80             81         3.4740e+02      4.77e-03       1.26e-03       7.93e+01
+2024-10-15 11:08:25,878 [multiview_calib.bundle_adjustment_scipy] [INFO]>       81             82         3.4727e+02      1.27e-01       3.51e-01       9.44e+02
+2024-10-15 11:08:25,925 [multiview_calib.bundle_adjustment_scipy] [INFO]>       82             83         3.4722e+02      4.98e-02       3.41e-03       2.84e+02
+2024-10-15 11:08:25,969 [multiview_calib.bundle_adjustment_scipy] [INFO]>       83             84         3.4722e+02      3.29e-03       1.36e-02       5.65e+02
+2024-10-15 11:08:26,014 [multiview_calib.bundle_adjustment_scipy] [INFO]>       84             85         3.4721e+02      3.34e-03       1.19e-03       8.15e+01
+2024-10-15 11:08:26,058 [multiview_calib.bundle_adjustment_scipy] [INFO]>       85             86         3.4721e+02      1.48e-03       5.07e-03       9.99e+01
+2024-10-15 11:08:26,101 [multiview_calib.bundle_adjustment_scipy] [INFO]>       86             87         3.4721e+02      1.37e-03       1.00e-03       5.03e+01
+2024-10-15 11:08:26,145 [multiview_calib.bundle_adjustment_scipy] [INFO]>       87             88         3.4721e+02      1.19e-03       4.21e-03       5.96e+01
+2024-10-15 11:08:26,189 [multiview_calib.bundle_adjustment_scipy] [INFO]>       88             89         3.4721e+02      1.40e-03       1.62e-03       5.82e+01
+2024-10-15 11:08:26,233 [multiview_calib.bundle_adjustment_scipy] [INFO]>       89             90         3.4721e+02      9.44e-04       2.80e-03       1.04e+02
+2024-10-15 11:08:26,277 [multiview_calib.bundle_adjustment_scipy] [INFO]>       90             91         3.4721e+02      1.14e-03       1.91e-03       9.18e+01
+2024-10-15 11:08:26,322 [multiview_calib.bundle_adjustment_scipy] [INFO]>       91             92         3.4721e+02      1.09e-03       2.92e-03       1.35e+02
+2024-10-15 11:08:26,366 [multiview_calib.bundle_adjustment_scipy] [INFO]>       92             93         3.4720e+02      1.13e-03       1.99e-03       1.11e+02
+2024-10-15 11:08:26,411 [multiview_calib.bundle_adjustment_scipy] [INFO]>       93             94         3.4720e+02      1.05e-03       2.70e-03       1.42e+02
+2024-10-15 11:08:26,456 [multiview_calib.bundle_adjustment_scipy] [INFO]>       94             95         3.4720e+02      1.09e-03       2.06e-03       1.22e+02
+2024-10-15 11:08:26,499 [multiview_calib.bundle_adjustment_scipy] [INFO]>       95             96         3.4720e+02      1.03e-03       2.51e-03       1.78e+02
+2024-10-15 11:08:26,543 [multiview_calib.bundle_adjustment_scipy] [INFO]>       96             97         3.4720e+02      1.03e-03       2.01e-03       1.59e+02
+2024-10-15 11:08:26,587 [multiview_calib.bundle_adjustment_scipy] [INFO]>       97             98         3.4720e+02      4.48e-04       6.65e-04       5.25e+01
+2024-10-15 11:08:26,632 [multiview_calib.bundle_adjustment_scipy] [INFO]>       98             99         3.4720e+02      4.13e-04       1.14e-03       2.98e+01
+2024-10-15 11:08:26,676 [multiview_calib.bundle_adjustment_scipy] [INFO]>       99             100        3.4720e+02      3.71e-04       5.61e-04       3.18e+01
+2024-10-15 11:08:26,719 [multiview_calib.bundle_adjustment_scipy] [INFO]>       100            101        3.4720e+02      4.55e-04       1.38e-03       3.90e+01
+2024-10-15 11:08:26,763 [multiview_calib.bundle_adjustment_scipy] [INFO]>       101            102        3.4720e+02      4.13e-04       5.04e-04       5.62e+01
+2024-10-15 11:08:26,806 [multiview_calib.bundle_adjustment_scipy] [INFO]>       102            103        3.4720e+02      6.33e-04       2.16e-03       6.77e+01
+2024-10-15 11:08:26,849 [multiview_calib.bundle_adjustment_scipy] [INFO]>       103            104        3.4720e+02      5.63e-04       4.42e-04       4.83e+01
+2024-10-15 11:08:26,892 [multiview_calib.bundle_adjustment_scipy] [INFO]>       104            105        3.4720e+02      7.04e-04       2.61e-03       5.11e+01
+2024-10-15 11:08:26,936 [multiview_calib.bundle_adjustment_scipy] [INFO]>       105            106        3.4720e+02      1.44e-03       2.61e-03       1.85e+02
+2024-10-15 11:08:26,980 [multiview_calib.bundle_adjustment_scipy] [INFO]>       106            107        3.4719e+02      4.70e-04       5.86e-04       3.35e+01
+2024-10-15 11:08:27,024 [multiview_calib.bundle_adjustment_scipy] [INFO]>       107            108        3.4719e+02      3.94e-04       1.20e-03       2.56e+01
+2024-10-15 11:08:27,068 [multiview_calib.bundle_adjustment_scipy] [INFO]>       108            109        3.4719e+02      4.26e-04       6.29e-04       2.14e+01
+2024-10-15 11:08:27,111 [multiview_calib.bundle_adjustment_scipy] [INFO]>       109            110        3.4719e+02      3.62e-04       1.02e-03       2.02e+01
+2024-10-15 11:08:27,155 [multiview_calib.bundle_adjustment_scipy] [INFO]>       110            111        3.4719e+02      3.96e-04       6.84e-04       1.89e+01
+2024-10-15 11:08:27,199 [multiview_calib.bundle_adjustment_scipy] [INFO]>       111            112        3.4719e+02      3.42e-04       8.76e-04       3.00e+01
+2024-10-15 11:08:27,241 [multiview_calib.bundle_adjustment_scipy] [INFO]>       112            113        3.4719e+02      3.80e-04       7.55e-04       2.94e+01
+2024-10-15 11:08:27,285 [multiview_calib.bundle_adjustment_scipy] [INFO]>       113            114        3.4719e+02      3.32e-04       7.64e-04       4.01e+01
+2024-10-15 11:08:27,329 [multiview_calib.bundle_adjustment_scipy] [INFO]>       114            115        3.4719e+02      3.75e-04       8.46e-04       3.10e+01
+2024-10-15 11:08:27,373 [multiview_calib.bundle_adjustment_scipy] [INFO]>       115            116        3.4719e+02      3.34e-04       6.79e-04       4.31e+01
+2024-10-15 11:08:27,417 [multiview_calib.bundle_adjustment_scipy] [INFO]>       116            117        3.4719e+02      3.82e-04       9.63e-04       4.15e+01
+2024-10-15 11:08:27,461 [multiview_calib.bundle_adjustment_scipy] [INFO]>       117            118        3.4719e+02      3.55e-04       6.42e-04       6.11e+01
+2024-10-15 11:08:27,504 [multiview_calib.bundle_adjustment_scipy] [INFO]>       118            119        3.4719e+02      5.02e-04       1.45e-03       1.49e+02
+2024-10-15 11:08:27,548 [multiview_calib.bundle_adjustment_scipy] [INFO]>       119            120        3.4719e+02      4.10e-04       5.00e-04       5.78e+01
+2024-10-15 11:08:27,592 [multiview_calib.bundle_adjustment_scipy] [INFO]>       120            121        3.4719e+02      4.97e-04       1.65e-03       3.48e+01
+2024-10-15 11:08:27,634 [multiview_calib.bundle_adjustment_scipy] [INFO]>       121            122        3.4719e+02      4.66e-04       4.68e-04       3.33e+01
+2024-10-15 11:08:27,677 [multiview_calib.bundle_adjustment_scipy] [INFO]>       122            123        3.4719e+02      5.82e-04       2.05e-03       3.73e+01
+2024-10-15 11:08:27,721 [multiview_calib.bundle_adjustment_scipy] [INFO]>       123            124        3.4719e+02      5.50e-04       4.42e-04       2.74e+01
+2024-10-15 11:08:27,765 [multiview_calib.bundle_adjustment_scipy] [INFO]>       124            125        3.4719e+02      8.88e-04       3.37e-03       4.96e+01
+2024-10-15 11:08:27,809 [multiview_calib.bundle_adjustment_scipy] [INFO]>       125            126        3.4719e+02      8.24e-04       4.08e-04       3.86e+01
+2024-10-15 11:08:27,852 [multiview_calib.bundle_adjustment_scipy] [INFO]>       126            127        3.4718e+02      1.11e-03       4.43e-03       8.14e+01
+2024-10-15 11:08:27,896 [multiview_calib.bundle_adjustment_scipy] [INFO]>       127            128        3.4718e+02      1.07e-03       3.95e-04       4.52e+01
+2024-10-15 11:08:27,939 [multiview_calib.bundle_adjustment_scipy] [INFO]>       128            129        3.4718e+02      1.45e-03       5.97e-03       1.13e+02
+2024-10-15 11:08:27,982 [multiview_calib.bundle_adjustment_scipy] [INFO]>       129            130        3.4718e+02      1.41e-03       3.88e-04       5.39e+01
+2024-10-15 11:08:28,025 [multiview_calib.bundle_adjustment_scipy] [INFO]>       130            131        3.4718e+02      1.93e-03       8.10e-03       1.73e+02
+2024-10-15 11:08:28,085 [multiview_calib.bundle_adjustment_scipy] [INFO]>       131            132        3.4718e+02      1.89e-03       3.84e-04       6.28e+01
+2024-10-15 11:08:28,128 [multiview_calib.bundle_adjustment_scipy] [INFO]>       132            133        3.4717e+02      2.45e-03       1.04e-02       2.70e+02
+2024-10-15 11:08:28,171 [multiview_calib.bundle_adjustment_scipy] [INFO]>       133            134        3.4717e+02      2.40e-03       3.82e-04       7.11e+01
+2024-10-15 11:08:28,214 [multiview_calib.bundle_adjustment_scipy] [INFO]>       134            135        3.4717e+02      3.28e-03       1.41e-02       4.02e+02
+2024-10-15 11:08:28,259 [multiview_calib.bundle_adjustment_scipy] [INFO]>       135            136        3.4717e+02      3.31e-03       6.83e-04       9.49e+01
+2024-10-15 11:08:28,302 [multiview_calib.bundle_adjustment_scipy] [INFO]>       136            137        3.4716e+02      9.22e-04       3.53e-03       1.04e+02
+2024-10-15 11:08:28,345 [multiview_calib.bundle_adjustment_scipy] [INFO]>       137            138        3.4716e+02      1.23e-03       1.41e-03       9.32e+01
+2024-10-15 11:08:28,388 [multiview_calib.bundle_adjustment_scipy] [INFO]>       138            139        3.4716e+02      3.80e-04       9.16e-04       2.82e+01
+2024-10-15 11:08:28,431 [multiview_calib.bundle_adjustment_scipy] [INFO]>       139            140        3.4716e+02      3.28e-04       6.20e-04       1.57e+01
+2024-10-15 11:08:28,475 [multiview_calib.bundle_adjustment_scipy] [INFO]>       140            141        3.4716e+02      3.80e-04       1.04e-03       2.29e+01
+2024-10-15 11:08:28,518 [multiview_calib.bundle_adjustment_scipy] [INFO]>       141            142        3.4716e+02      3.46e-04       5.62e-04       2.60e+01
+2024-10-15 11:08:28,561 [multiview_calib.bundle_adjustment_scipy] [INFO]>       142            143        3.4716e+02      4.06e-04       1.21e-03       5.68e+01
+2024-10-15 11:08:28,605 [multiview_calib.bundle_adjustment_scipy] [INFO]>       143            144        3.4716e+02      3.74e-04       5.16e-04       6.49e+01
+2024-10-15 11:08:28,647 [multiview_calib.bundle_adjustment_scipy] [INFO]>       144            145        3.4716e+02      4.46e-04       1.44e-03       3.36e+01
+2024-10-15 11:08:28,691 [multiview_calib.bundle_adjustment_scipy] [INFO]>       145            146        3.4716e+02      4.16e-04       4.80e-04       2.85e+01
+2024-10-15 11:08:28,734 [multiview_calib.bundle_adjustment_scipy] [INFO]>       146            147        3.4716e+02      5.02e-04       1.73e-03       3.32e+01
+2024-10-15 11:08:28,777 [multiview_calib.bundle_adjustment_scipy] [INFO]>       147            148        3.4716e+02      4.74e-04       4.53e-04       2.43e+01
+2024-10-15 11:08:28,821 [multiview_calib.bundle_adjustment_scipy] [INFO]>       148            149        3.4716e+02      5.78e-04       2.09e-03       3.83e+01
+2024-10-15 11:08:28,865 [multiview_calib.bundle_adjustment_scipy] [INFO]>       149            150        3.4716e+02      5.51e-04       4.31e-04       2.69e+01
+2024-10-15 11:08:28,908 [multiview_calib.bundle_adjustment_scipy] [INFO]>       150            151        3.4716e+02      6.78e-04       2.57e-03       4.73e+01
+2024-10-15 11:08:28,952 [multiview_calib.bundle_adjustment_scipy] [INFO]>       151            152        3.4716e+02      6.52e-04       4.15e-04       3.20e+01
+2024-10-15 11:08:28,995 [multiview_calib.bundle_adjustment_scipy] [INFO]>       152            153        3.4716e+02      8.09e-04       3.17e-03       5.98e+01
+2024-10-15 11:08:29,039 [multiview_calib.bundle_adjustment_scipy] [INFO]>       153            154        3.4716e+02      7.83e-04       4.02e-04       3.73e+01
+2024-10-15 11:08:29,082 [multiview_calib.bundle_adjustment_scipy] [INFO]>       154            155        3.4715e+02      9.78e-04       3.94e-03       7.66e+01
+2024-10-15 11:08:29,126 [multiview_calib.bundle_adjustment_scipy] [INFO]>       155            156        3.4715e+02      9.52e-04       3.93e-04       4.30e+01
+2024-10-15 11:08:29,168 [multiview_calib.bundle_adjustment_scipy] [INFO]>       156            157        3.4715e+02      1.19e-03       4.93e-03       9.87e+01
+2024-10-15 11:08:29,213 [multiview_calib.bundle_adjustment_scipy] [INFO]>       157            158        3.4715e+02      1.17e-03       3.86e-04       4.88e+01
+2024-10-15 11:08:29,256 [multiview_calib.bundle_adjustment_scipy] [INFO]>       158            159        3.4715e+02      1.47e-03       6.18e-03       1.29e+02
+2024-10-15 11:08:29,300 [multiview_calib.bundle_adjustment_scipy] [INFO]>       159            160        3.4715e+02      1.44e-03       3.81e-04       5.50e+01
+2024-10-15 11:08:29,344 [multiview_calib.bundle_adjustment_scipy] [INFO]>       160            161        3.4715e+02      1.82e-03       7.78e-03       1.79e+02
+2024-10-15 11:08:29,386 [multiview_calib.bundle_adjustment_scipy] [INFO]>       161            162        3.4714e+02      1.79e-03       3.79e-04       6.15e+01
+2024-10-15 11:08:29,430 [multiview_calib.bundle_adjustment_scipy] [INFO]>       162            163        3.4714e+02      2.27e-03       9.80e-03       2.56e+02
+2024-10-15 11:08:29,472 [multiview_calib.bundle_adjustment_scipy] [INFO]>       163            164        3.4714e+02      2.23e-03       3.78e-04       6.89e+01
+2024-10-15 11:08:29,516 [multiview_calib.bundle_adjustment_scipy] [INFO]>       164            165        3.4714e+02      2.82e-03       1.23e-02       3.65e+02
+2024-10-15 11:08:29,560 [multiview_calib.bundle_adjustment_scipy] [INFO]>       165            166        3.4713e+02      2.77e-03       3.78e-04       7.66e+01
+2024-10-15 11:08:29,602 [multiview_calib.bundle_adjustment_scipy] [INFO]>       166            167        3.4713e+02      3.10e-03       1.36e-02       4.72e+02
+2024-10-15 11:08:29,647 [multiview_calib.bundle_adjustment_scipy] [INFO]>       167            168        3.4713e+02      3.03e-03       3.98e-04       8.11e+01
+2024-10-15 11:08:29,690 [multiview_calib.bundle_adjustment_scipy] [INFO]>       168            169        3.4713e+02      2.21e-03       9.22e-03       1.71e+02
+2024-10-15 11:08:29,734 [multiview_calib.bundle_adjustment_scipy] [INFO]>       169            170        3.4712e+02      2.32e-03       1.14e-03       8.49e+01
+2024-10-15 11:08:29,778 [multiview_calib.bundle_adjustment_scipy] [INFO]>       170            171        3.4712e+02      6.50e-04       2.37e-03       8.28e+01
+2024-10-15 11:08:29,821 [multiview_calib.bundle_adjustment_scipy] [INFO]>       171            172        3.4712e+02      5.64e-04       4.27e-04       3.08e+01
+2024-10-15 11:08:29,865 [multiview_calib.bundle_adjustment_scipy] [INFO]>       172            173        3.4712e+02      5.30e-04       1.81e-03       3.38e+01
+2024-10-15 11:08:29,908 [multiview_calib.bundle_adjustment_scipy] [INFO]>       173            174        3.4712e+02      4.76e-04       4.57e-04       2.55e+01
+2024-10-15 11:08:29,952 [multiview_calib.bundle_adjustment_scipy] [INFO]>       174            175        3.4712e+02      5.35e-04       1.93e-03       4.06e+01
+2024-10-15 11:08:29,996 [multiview_calib.bundle_adjustment_scipy] [INFO]>       175            176        3.4712e+02      5.00e-04       4.30e-04       2.56e+01
+2024-10-15 11:08:30,039 [multiview_calib.bundle_adjustment_scipy] [INFO]>       176            177        3.4712e+02      5.91e-04       2.20e-03       3.86e+01
+2024-10-15 11:08:30,083 [multiview_calib.bundle_adjustment_scipy] [INFO]>       177            178        3.4712e+02      5.63e-04       4.23e-04       2.93e+01
+2024-10-15 11:08:30,126 [multiview_calib.bundle_adjustment_scipy] [INFO]>       178            179        3.4712e+02      6.69e-04       2.60e-03       5.19e+01
+2024-10-15 11:08:30,171 [multiview_calib.bundle_adjustment_scipy] [INFO]>       179            180        3.4712e+02      6.43e-04       4.04e-04       3.25e+01
+2024-10-15 11:08:30,215 [multiview_calib.bundle_adjustment_scipy] [INFO]>       180            181        3.4712e+02      7.58e-04       3.00e-03       5.59e+01
+2024-10-15 11:08:30,260 [multiview_calib.bundle_adjustment_scipy] [INFO]>       181            182        3.4712e+02      7.32e-04       4.03e-04       3.63e+01
+2024-10-15 11:08:30,303 [multiview_calib.bundle_adjustment_scipy] [INFO]>       182            183        3.4712e+02      8.59e-04       3.49e-03       7.20e+01
+2024-10-15 11:08:30,347 [multiview_calib.bundle_adjustment_scipy] [INFO]>       183            184        3.4711e+02      8.26e-04       3.86e-04       3.94e+01
+2024-10-15 11:08:30,391 [multiview_calib.bundle_adjustment_scipy] [INFO]>       184            185        3.4711e+02      8.94e-04       3.58e-03       6.58e+01
+2024-10-15 11:08:30,436 [multiview_calib.bundle_adjustment_scipy] [INFO]>       185            186        3.4711e+02      8.44e-04       4.13e-04       4.02e+01
+2024-10-15 11:08:30,479 [multiview_calib.bundle_adjustment_scipy] [INFO]>       186            187        3.4711e+02      8.05e-04       3.14e-03       6.85e+01
+2024-10-15 11:08:30,523 [multiview_calib.bundle_adjustment_scipy] [INFO]>       187            188        3.4711e+02      8.09e-04       6.21e-04       5.74e+01
+2024-10-15 11:08:30,567 [multiview_calib.bundle_adjustment_scipy] [INFO]>       188            189        3.4711e+02      4.38e-04       1.41e-03       2.84e+01
+2024-10-15 11:08:30,611 [multiview_calib.bundle_adjustment_scipy] [INFO]>       189            190        3.4711e+02      3.98e-04       4.76e-04       2.20e+01
+2024-10-15 11:08:30,654 [multiview_calib.bundle_adjustment_scipy] [INFO]>       190            191        3.4711e+02      4.71e-04       1.65e-03       3.18e+01
+2024-10-15 11:08:30,698 [multiview_calib.bundle_adjustment_scipy] [INFO]>       191            192        3.4711e+02      4.43e-04       4.44e-04       2.21e+01
+2024-10-15 11:08:30,741 [multiview_calib.bundle_adjustment_scipy] [INFO]>       192            193        3.4711e+02      5.37e-04       1.97e-03       3.59e+01
+2024-10-15 11:08:30,785 [multiview_calib.bundle_adjustment_scipy] [INFO]>       193            194        3.4711e+02      5.11e-04       4.26e-04       2.60e+01
+2024-10-15 11:08:30,828 [multiview_calib.bundle_adjustment_scipy] [INFO]>       194            195        3.4711e+02      6.27e-04       2.42e-03       4.44e+01
+2024-10-15 11:08:30,871 [multiview_calib.bundle_adjustment_scipy] [INFO]>       195            196        3.4711e+02      6.02e-04       4.07e-04       3.03e+01
+2024-10-15 11:08:30,915 [multiview_calib.bundle_adjustment_scipy] [INFO]>       196            197        3.4711e+02      7.42e-04       2.96e-03       5.49e+01
+2024-10-15 11:08:30,958 [multiview_calib.bundle_adjustment_scipy] [INFO]>       197            198        3.4711e+02      7.18e-04       3.97e-04       3.61e+01
+2024-10-15 11:08:31,001 [multiview_calib.bundle_adjustment_scipy] [INFO]>       198            199        3.4711e+02      8.89e-04       3.65e-03       7.22e+01
+2024-10-15 11:08:31,045 [multiview_calib.bundle_adjustment_scipy] [INFO]>       199            200        3.4710e+02      8.64e-04       3.85e-04       4.12e+01
+2024-10-15 11:08:31,045 [multiview_calib.bundle_adjustment_scipy] [INFO]> The maximum number of function evaluations is exceeded.
+2024-10-15 11:08:31,045 [multiview_calib.bundle_adjustment_scipy] [INFO]> Function evaluations 200, initial cost 8.2415e+05, final cost 3.4710e+02, first-order optimality 4.12e+01.
+2024-10-15 11:08:31,045 [root] [INFO]> Optimization took 9 seconds
+2024-10-15 11:08:31,047 [root] [INFO]> Average absolute residual: 0.31 over 2592.0 points.
+2024-10-15 11:08:31,268 [root] [INFO]> Outlier rejection:
+2024-10-15 11:08:31,269 [root] [INFO]> 	 threshold outliers: 50
+2024-10-15 11:08:31,269 [root] [INFO]> 	 max_nfev=200
+2024-10-15 11:08:31,270 [root] [INFO]> 	 Number of points considered outliers: 0
+2024-10-15 11:08:31,271 [root] [INFO]> 	 Exit.
+2024-10-15 11:08:31,271 [root] [INFO]> Reprojection errors (mean+-std pixels):
+2024-10-15 11:08:31,272 [root] [INFO]> 	 cam0 n_points=864: 0.574+-0.159
+2024-10-15 11:08:31,273 [root] [INFO]> 	 cam1 n_points=864: 0.257+-0.146
+2024-10-15 11:08:31,273 [root] [INFO]> 	 cam2 n_points=864: 0.582+-0.150
+2024-10-15 11:08:31,273 [root] [INFO]> Reprojection errors (median pixels):
+2024-10-15 11:08:31,274 [root] [INFO]> 	 cam0 n_points=864: 0.556
+2024-10-15 11:08:31,275 [root] [INFO]> 	 cam1 n_points=864: 0.245
+2024-10-15 11:08:31,275 [root] [INFO]> 	 cam2 n_points=864: 0.570
+2024-10-15 11:08:31,276 [root] [INFO]> Visualise all the annotations.

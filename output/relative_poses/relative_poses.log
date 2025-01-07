@@ -1,0 +1,90 @@
+2024-09-24 16:38:34,131 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam1']:
+2024-09-24 16:38:34,131 [root] [INFO]> 	0 out of 576 points considered outliers.
+2024-09-24 16:38:34,132 [root] [INFO]> 	Fundamental matrix:
+		[ 5.29336213e-09 -4.31712076e-07 -4.98422232e-04]
+		[-4.55139006e-07  8.28864203e-08  1.33321965e-03]
+		[-7.68667016e-04 -9.76429943e-04  1.00000000e+00]
+2024-09-24 16:38:34,133 [root] [INFO]> 	Right camera position:
+		[ 0.50477553 -0.41123456  0.75900448]
+2024-09-24 16:38:34,138 [root] [INFO]> 	Residual error: 0.05890899950206293
+2024-09-24 16:38:34,141 [root] [INFO]> 	Sampson distance: 0.0028658553960978403
+2024-09-24 16:38:34,155 [root] [INFO]> Computing relative pose of pair ['cam1', 'cam2']:
+2024-09-24 16:38:34,156 [root] [INFO]> 	0 out of 576 points considered outliers.
+2024-09-24 16:38:34,157 [root] [INFO]> 	Fundamental matrix:
+		[-2.19284052e-07 -8.21683593e-07 -4.01125723e-04]
+		[-7.95792440e-07  1.99429349e-07  2.86043442e-03]
+		[-9.83527103e-04 -1.62220706e-03  1.00000000e+00]
+2024-09-24 16:38:34,158 [root] [INFO]> 	Right camera position:
+		[ 0.58560281 -0.41915366  0.69381522]
+2024-09-24 16:38:34,162 [root] [INFO]> 	Residual error: 0.051008618283496364
+2024-09-24 16:38:34,163 [root] [INFO]> 	Sampson distance: 0.0020758830929066135
+2024-09-24 16:38:34,178 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam2']:
+2024-09-24 16:38:34,178 [root] [INFO]> 	0 out of 576 points considered outliers.
+2024-09-24 16:38:34,179 [root] [INFO]> 	Fundamental matrix:
+		[-3.39105539e-07 -8.81950701e-07 -1.02408691e-03]
+		[-8.27411895e-07  2.84620484e-07 -2.18774581e-04]
+		[-0.00107446  0.00174189  1.        ]
+2024-09-24 16:38:34,180 [root] [INFO]> 	Right camera position:
+		[-0.33790187 -0.40829529  0.84800783]
+2024-09-24 16:38:34,184 [root] [INFO]> 	Residual error: 0.056531452897354034
+2024-09-24 16:38:34,185 [root] [INFO]> 	Sampson distance: 0.002455774720162135
+2024-10-14 18:44:37,963 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam1']:
+2024-10-14 18:44:37,963 [root] [INFO]> 	0 out of 720 points considered outliers.
+2024-10-14 18:44:37,963 [root] [INFO]> 	Fundamental matrix:
+		[-4.17180126e-08 -1.19894206e-06 -1.04109326e-03]
+		[-1.13321549e-06 -5.17367248e-08  3.11889892e-03]
+		[-8.52499138e-04 -1.43311548e-03  1.00000000e+00]
+2024-10-14 18:44:37,963 [root] [INFO]> 	Right camera position:
+		[ 0.57048057 -0.35121238  0.74242965]
+2024-10-14 18:44:37,963 [root] [INFO]> 	Residual error: 0.18704478186815554
+2024-10-14 18:44:37,979 [root] [INFO]> 	Sampson distance: 0.02582505390286564
+2024-10-14 18:44:37,994 [root] [INFO]> Computing relative pose of pair ['cam1', 'cam2']:
+2024-10-14 18:44:37,994 [root] [INFO]> 	0 out of 720 points considered outliers.
+2024-10-14 18:44:37,994 [root] [INFO]> 	Fundamental matrix:
+		[-6.58104846e-09 -1.03015327e-06 -6.98964839e-04]
+		[-1.01381692e-06 -4.16434783e-09  2.62666707e-03]
+		[-7.31057542e-04 -1.28930134e-03  1.00000000e+00]
+2024-10-14 18:44:37,994 [root] [INFO]> 	Right camera position:
+		[ 0.50917824 -0.32091239  0.79859424]
+2024-10-14 18:44:37,994 [root] [INFO]> 	Residual error: 0.1349898840942332
+2024-10-14 18:44:37,994 [root] [INFO]> 	Sampson distance: 0.013844793816148412
+2024-10-14 18:44:38,010 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam2']:
+2024-10-14 18:44:38,010 [root] [INFO]> 	0 out of 720 points considered outliers.
+2024-10-14 18:44:38,010 [root] [INFO]> 	Fundamental matrix:
+		[-3.65498667e-08 -7.05377411e-07 -6.44829985e-04]
+		[-8.02185673e-07  7.58223898e-08 -9.17074201e-04]
+		[-4.95789844e-04  1.88850695e-03  1.00000000e+00]
+2024-10-14 18:44:38,010 [root] [INFO]> 	Right camera position:
+		[-0.44850745 -0.35744002  0.81919332]
+2024-10-14 18:44:38,010 [root] [INFO]> 	Residual error: 0.9488074813105546
+2024-10-14 18:44:38,026 [root] [INFO]> 	Sampson distance: 0.5094261479688781
+2024-10-15 11:07:31,337 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam1']:
+2024-10-15 11:07:31,337 [root] [INFO]> 	0 out of 864 points considered outliers.
+2024-10-15 11:07:31,338 [root] [INFO]> 	Fundamental matrix:
+		[-4.06943919e-08 -1.19741927e-06 -1.03856714e-03]
+		[-1.12987231e-06 -4.69781721e-08  3.10894741e-03]
+		[-8.51897867e-04 -1.43228219e-03  1.00000000e+00]
+2024-10-15 11:07:31,340 [root] [INFO]> 	Right camera position:
+		[ 0.56986537 -0.35072834  0.7431306 ]
+2024-10-15 11:07:31,346 [root] [INFO]> 	Residual error: 0.2633754434072643
+2024-10-15 11:07:31,350 [root] [INFO]> 	Sampson distance: 0.06936217586661474
+2024-10-15 11:07:31,370 [root] [INFO]> Computing relative pose of pair ['cam1', 'cam2']:
+2024-10-15 11:07:31,370 [root] [INFO]> 	0 out of 864 points considered outliers.
+2024-10-15 11:07:31,371 [root] [INFO]> 	Fundamental matrix:
+		[-7.45346924e-09 -1.03210160e-06 -7.03609005e-04]
+		[-1.02066465e-06 -1.07264721e-08  2.64575888e-03]
+		[-7.32598972e-04 -1.29112576e-03  1.00000000e+00]
+2024-10-15 11:07:31,371 [root] [INFO]> 	Right camera position:
+		[ 0.51008498 -0.32191457  0.79761164]
+2024-10-15 11:07:31,377 [root] [INFO]> 	Residual error: 0.20411394223647225
+2024-10-15 11:07:31,381 [root] [INFO]> 	Sampson distance: 0.04433246289343855
+2024-10-15 11:07:31,401 [root] [INFO]> Computing relative pose of pair ['cam0', 'cam2']:
+2024-10-15 11:07:31,401 [root] [INFO]> 	0 out of 864 points considered outliers.
+2024-10-15 11:07:31,402 [root] [INFO]> 	Fundamental matrix:
+		[-3.73990017e-08 -7.08560406e-07 -6.45094595e-04]
+		[-8.04989575e-07  7.44078871e-08 -9.18283784e-04]
+		[-4.96225061e-04  1.89680597e-03  1.00000000e+00]
+2024-10-15 11:07:31,402 [root] [INFO]> 	Right camera position:
+		[-0.44769836 -0.35657409  0.82001286]
+2024-10-15 11:07:31,407 [root] [INFO]> 	Residual error: 1.0076961691362483
+2024-10-15 11:07:31,412 [root] [INFO]> 	Sampson distance: 0.580488427732726

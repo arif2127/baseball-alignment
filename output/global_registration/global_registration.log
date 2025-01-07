@@ -1,0 +1,9 @@
+2024-10-15 11:12:33,051 [root] [INFO]> src points: bundle adjustment optimized 3d points
+2024-10-15 11:12:33,051 [root] [INFO]> dst points: global coordinates
+2024-10-15 11:12:33,065 [root] [INFO]> Initial guess using Procrustes registration:
+2024-10-15 11:12:33,065 [root] [INFO]> 	 Mean error distance: 0.146 [unit of destination (dst) point set]
+2024-10-15 11:12:36,737 [root] [INFO]> Final registration:
+2024-10-15 11:12:36,737 [root] [INFO]> 	 Mean error distance: 0.143 [unit of destination (dst) point set]
+2024-10-15 11:12:37,782 [root] [INFO]> Per pair of view average error:
+2024-10-15 11:12:37,787 [root] [INFO]> 	 mean+-std: 0.068+-0.019 [unit of destination (dst) point set]
+2024-10-15 11:12:37,787 [root] [INFO]> 	 median:    0.069        [unit of destination (dst) point set]

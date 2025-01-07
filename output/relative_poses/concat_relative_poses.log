@@ -1,0 +1,24 @@
+2024-09-24 16:40:37,372 [root] [INFO]> Concatenating relative poses for pair: ('cam1', 'cam2')
+2024-09-24 16:40:37,373 [root] [INFO]> 	 Relative scale to ('cam0', 'cam1') n_points=576: 0.958+-0.003
+2024-09-24 16:40:37,374 [root] [INFO]> 	 cam2 new position: [-0.41139666 -0.49699902  1.02575524]
+2024-09-24 16:40:37,790 [root] [INFO]> Concatenating relative poses for pair: ('cam0', 'cam2')
+2024-09-24 16:40:37,791 [root] [INFO]> 	 Relative scale to ('cam1', 'cam2') n_points=576: 1.211+-0.004
+2024-09-24 16:40:37,791 [root] [INFO]> 	 cam0 new position: [ 0.00153947 -0.0027313   0.00011829]
+2024-09-24 16:44:42,498 [root] [INFO]> Concatenating relative poses for pair: ('cam1', 'cam2')
+2024-09-24 16:44:42,498 [root] [INFO]> 	 Relative scale to ('cam0', 'cam1') n_points=576: 0.958+-0.003
+2024-09-24 16:44:42,499 [root] [INFO]> 	 cam2 new position: [-0.41143066 -0.4970022   1.02576514]
+2024-09-24 16:44:42,897 [root] [INFO]> Concatenating relative poses for pair: ('cam0', 'cam2')
+2024-09-24 16:44:42,897 [root] [INFO]> 	 Relative scale to ('cam1', 'cam2') n_points=576: 1.211+-0.004
+2024-09-24 16:44:42,898 [root] [INFO]> 	 cam0 new position: [ 0.00146976 -0.00277724  0.00021691]
+2024-10-14 18:45:05,406 [root] [INFO]> Concatenating relative poses for pair: ('cam1', 'cam2')
+2024-10-14 18:45:05,406 [root] [INFO]> 	 Relative scale to ('cam0', 'cam1') n_points=720: 0.992+-0.008
+2024-10-14 18:45:05,406 [root] [INFO]> 	 cam2 new position: [-0.41778584 -0.35649349  0.82624827]
+2024-10-14 18:45:05,702 [root] [INFO]> Concatenating relative poses for pair: ('cam0', 'cam2')
+2024-10-14 18:45:05,702 [root] [INFO]> 	 Relative scale to ('cam1', 'cam2') n_points=720: 0.988+-0.010
+2024-10-14 18:45:05,702 [root] [INFO]> 	 cam0 new position: [-0.00015028  0.00269552  0.00656146]
+2024-10-15 11:07:54,000 [root] [INFO]> Concatenating relative poses for pair: ('cam1', 'cam2')
+2024-10-15 11:07:54,000 [root] [INFO]> 	 Relative scale to ('cam0', 'cam1') n_points=864: 0.992+-0.008
+2024-10-15 11:07:54,001 [root] [INFO]> 	 cam2 new position: [-0.41823013 -0.35661901  0.82772186]
+2024-10-15 11:07:54,314 [root] [INFO]> Concatenating relative poses for pair: ('cam0', 'cam2')
+2024-10-15 11:07:54,315 [root] [INFO]> 	 Relative scale to ('cam1', 'cam2') n_points=864: 0.987+-0.009
+2024-10-15 11:07:54,315 [root] [INFO]> 	 cam0 new position: [-0.00109032 -0.00042615  0.00691729]
