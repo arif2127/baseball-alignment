@@ -3,7 +3,7 @@
 
 In the world of product customization, precise logo placement on curved surfaces like baseballs presents a unique challenge. To address this, I developed a 3D alignment framework that leverages computer vision techniques and a multi-camera setup to ensure accurate positioning and alignment of logos on baseballs by understanding their orientation in 3D space.
 
-<iframe width="560" height="315" src="asset/baseball.mp4" frameborder="0" allowfullscreen></iframe>
+[Watch Demo on YouTube](https://youtube.com/shorts/Gop8vjaT2SM)
 
 ## Project Overview
 The primary goal of this project is to use three cameras positioned around a stationary baseball to capture and analyze the ball's orientation, then use that information to rotate it to a precise, canonical orientation for logo printing. Here's the step-by-step breakdown of my framework:
