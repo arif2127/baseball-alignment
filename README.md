@@ -57,9 +57,7 @@ Identifying the seams on the baseball is essential, as they provide unique marke
 ## Triangulating the 3D Center and Radius
 By using the 2D centers from all three views, along with the cameras’ intrinsic and extrinsic parameters, I triangulated the 3D center of the ball. 
 
-$$
-\text{radius}_{2D} = \frac{\text{focal\_length} \times \text{radius}_{3D}}{\text{distance\_to\_ball}}
-$$
+(eq.png)
 
 Using this formula for each camera, I obtained the 3D radius of the ball. distance_to_ball means distance between 3D ball center and camera position.
 
